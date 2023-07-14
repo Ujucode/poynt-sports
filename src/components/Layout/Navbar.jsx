@@ -1,38 +1,38 @@
-import logo from '../../assets/logo.svg';
+import logo from "../../assets/logo.svg";
+import classes from "./Layout.module.css";
 
 const Navbar = () => {
   return (
-    <nav className='bg-primary text-4xl p-4 flex justify-between items-center'>
+    <nav
+      className={`flex justify-between items-center bg-primary text-3xl font-bold pt-4 ${classes["header-container"]} `}
+    >
       <div>
-        <img src={logo} alt='Company logo' className='' />
+        <img src={logo} alt="Company logo" className="" />
       </div>
-      <ul className='flex justify-center space-x-4'>
+      <ul className="flex justify-center space-x-4">
         <li>
-          <a href='/Home' className='text-white-1 hover:text-white-0'>
+          <a href="/Home" className="text-white-1 hover:text-white-0">
             Home
           </a>
         </li>
         <li>
-          <a href='/About' className='text-white-1 hover:text-white-0'>
+          <a href="/About" className="text-white-1 hover:text-white-0">
             About
           </a>
         </li>
         <li>
-          <a href='/Events' className='text-white-1 hover:text-white-0'>
+          <a href="/Events" className="text-white-1 hover:text-white-0">
             Events
           </a>
         </li>
         <li>
-          <a href='/Contact' className='text-white-1 hover:text-white-0'>
+          <a href="/Contact" className="text-white-1 hover:text-white-0">
             Contact
           </a>
         </li>
       </ul>
-      <span>
-        <a
-          href='/login'
-          className='bg-secondary rounded-lg text-white-1 hover:text-white-0'
-        >
+      <span className="mr-6">
+        <a href="/login" className=" text-white-1 hover:text-white-0">
           Sign In
         </a>
       </span>
