@@ -1,12 +1,14 @@
-import Navbar from './Layout/Navbar';
-import Main from './Layout/Main';
+import Navbar from "./Layout/Navbar";
+import Main from "./Layout/Main";
+import Footer from "./Layout/Footer";
 
 const Home = () => {
   return (
-    <header>
+    <>
       <Navbar />
       <Main />
-    </header>
+      <Footer />
+    </>
   );
 };
 
