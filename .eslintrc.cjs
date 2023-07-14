@@ -10,10 +10,14 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'prettier',
   ],
-  plugins: ['react', 'import', 'jsx-a11y', 'react-refresh'],
+  plugins: ['react-refresh', 'react', 'import', 'jsx-a11y'],
   rules: {
     'react/prop-types': 0,
     'react/react-in-jsx-scope': 0,
+    'react-refresh/only-export-components': [
+      'warn',
+      { allowConstantExport: true },
+    ],
   },
   parserOptions: {
     ecmaVersion: 2022,
