@@ -51,7 +51,7 @@ Read the [Usage Guide](https://classic.yarnpkg.com/en/docs/usage)
 5. Push your branch to remote
 
    - `git push <remote repo name> -u <your branch name>`
-   - Ex - `git push origin -u feature_branch`
+   - Ex - `git push -u origin feature_branch`
 
 ## Using Git
 
