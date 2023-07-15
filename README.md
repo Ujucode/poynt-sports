@@ -28,7 +28,7 @@ Read the [Usage Guide](https://classic.yarnpkg.com/en/docs/usage)
 
 1. Create a new branch
 
-   - `git checkout -b <your branch name>`
+   - `git checkout -b <your branch name> main`
 
 2. Add your work in this new branch
 
@@ -48,14 +48,10 @@ Read the [Usage Guide](https://classic.yarnpkg.com/en/docs/usage)
 
    - `git commit -m <message>`
 
-5. Update your branch with main
+5. Push your branch to remote
 
-   - `git pull `
-
-6. Push your branch to remote
-
-   - `git push <remote repo name> <your branch name>`
-   - Ex - `git push origin feature_branch`
+   - `git push <remote repo name> -u <your branch name>`
+   - Ex - `git push origin -u feature_branch`
 
 ## Using Git
 
