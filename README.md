@@ -26,31 +26,36 @@ Read the [Usage Guide](https://classic.yarnpkg.com/en/docs/usage)
 
 ## Working on a feature
 
-- Create a new branch
+1. Create a new branch
 
-  - `git checkout -m <your branch name>`
+   - `git checkout -b <your branch name>`
 
-- Add your work in this new branch
+2. Add your work in this new branch
 
-  - Ex - `touch index.txt`
+   - Ex - `touch index.txt`
 
-- After completion stage you changes
+3. After completion stage you changes
 
-  - for staging all changes
+   - for staging all changes
 
-    - `git stage . `
+     - `git add . `
 
-  - for staging single file
+   - for staging a single file
 
-    - `git stage ./<file name>`
+     - `git add ./<file name>`
 
-- Commit your changes
+4. Commit your changes
 
-  - `git commit -m <message>`
+   - `git commit -m <message>`
 
-- Push your branch to origin
+5. Update your branch with main
 
-  - `git push orging <your branch name>`
+   - `git pull `
+
+6. Push your branch to remote
+
+   - `git push <remote repo name> <your branch name>`
+   - Ex - `git push origin feature_branch`
 
 ## Using Git
 
