@@ -4,7 +4,7 @@
 
 @layer base {
   * {
-    font-family: "Roboto", sans-serif;
     font-family: "Rubik", sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 }
