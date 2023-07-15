@@ -5,7 +5,7 @@ const Main = () => {
     <main>
       <section className={`bg-gray-300 `}>
         <div className={`${classes["header-container"]}`}>
-          <h1>Main section</h1>
+          <h1>Main goes here</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
             deleniti! Nam rerum ad itaque dicta eius, quasi impedit, a mollitia
