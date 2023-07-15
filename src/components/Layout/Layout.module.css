@@ -1,4 +1,13 @@
-.header-container{
-    margin: 0 auto;
-    width: 1200px;  
+.header-container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.hero {
+  background-image: linear-gradient(
+      90deg,
+      rgba(34, 33, 33, 0.705),
+      rgba(188, 240, 158, 0.4)
+    ),
+    url(/src/assets/hero.svg);
 }
