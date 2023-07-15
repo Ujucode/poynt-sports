@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-blue-950">
       <div className={`${classes["header-container"]} `}>
-        <h1>Footer</h1>
+        <h1>Footer goes here</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
           reprehenderit fuga labore numquam quasi exercitationem distinctio
