@@ -42,7 +42,7 @@ Read the [Usage Guide](https://classic.yarnpkg.com/en/docs/usage)
 
    - for staging a single file
 
-     - `git add ./<file name>`
+     - `git add <file name>`
 
 4. Commit your changes
 
