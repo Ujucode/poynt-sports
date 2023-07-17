@@ -1,9 +1,10 @@
 import NewsCard from "../UI/NewsCard";
 import CoachesCard from "./CoachesCard";
+import classes from "./Layout.module.css";
 function Main() {
   return (
-    <>
-      <section>
+    <main className={`${classes["header-container"]}`}>
+      <section className="h-screen">
         <div className="flex-wrap text-center top-0 py-4">
           <h1 className="mb-4 text-xl font-bold leading-none tracking-tight text-gray-800 md:text-4xl lg:text-5xl dark:text-white-0">
             Athletes
@@ -176,16 +177,18 @@ function Main() {
       </sction>
 
       <section>
-        <div className="bg-[#B0CEAF] text-[40px] text-center py-12 font-bold">
-          Updates and News Letters
-        </div>
-        <div className="flex row basis-1/3">
-          <NewsCard></NewsCard>
-          <NewsCard></NewsCard>
-          <NewsCard></NewsCard>
+        <div className={``}>
+          <div className="bg-[#B0CEAF] text-[40px] text-center py-12 font-bold">
+            Updates and News Letters
+          </div>
+          <div className="flex row basis-1/3">
+            <NewsCard></NewsCard>
+            <NewsCard></NewsCard>
+            <NewsCard></NewsCard>
+          </div>
         </div>
       </section>
-    </>
+    </main>
   );
 }
 
