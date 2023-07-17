@@ -1,4 +1,5 @@
 import classes from "./Layout.module.css";
+import NewsCard from "../UI/NewsCard";
 
 const Main = () => {
   return (
@@ -44,6 +45,20 @@ const Main = () => {
           </p>
         </div>
       </section>
+      <div>
+
+        <div className="bg-[#B0CEAF] text-[40px] text-center py-12 font-bold">Updates and News Letters</div>
+        <div className="flex row basis-1/3">
+        <NewsCard></NewsCard>
+        <NewsCard></NewsCard>
+        <NewsCard></NewsCard>
+        </div>
+        
+        
+      </div>
+
+    
+  
     </main>
   );
 };
