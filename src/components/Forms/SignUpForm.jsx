@@ -98,7 +98,7 @@ function SignUpForm() {
         </Grid>
         <Grid container justifyContent="center">
           <Grid xs={12}>
-            <Button className=" p-2 mt-3 mb-2 rounded-lg #00AB55 white bg-green-400 ">
+            <Button className=" p-2 mt-3 mb-2 rounded-lg #00AB55 white bg-green-400 items-center">
               Sign Up
             </Button>
           </Grid>
