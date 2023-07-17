@@ -18,12 +18,6 @@ module.exports = {
       "warn",
       { allowConstantExport: true },
     ],
-    "no-restricted-imports": [
-      "error",
-      {
-        patterns: ["@mui/*/*/*"],
-      },
-    ],
   },
   parserOptions: {
     ecmaVersion: 2022,
