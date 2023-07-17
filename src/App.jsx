@@ -1,7 +1,8 @@
-import './App.css';
-import Home from './components/Home';
+import "./App.css";
+import Home from "./components/Home";
 
 function App() {
+  console.log("app");
   return <Home />;
 }
 
