@@ -1,7 +1,29 @@
 import classes from "./Layout.module.css";
 import NewsCard from "../UI/NewsCard";
+import Button from "../UI/Button";
+import img1 from "../../assets/new-updates1.png";
+import img2 from "../../assets/news-updates2.png";
+import img3 from "../../assets/news-updates3.png";
+import Input from "../UI/Input";
 
 const Main = () => {
+  let cards = [
+    {
+      key: "Lorem ipsum dolor sit amet consectetur. Turpis consectetur.",
+      text: "Lorem ipsum dolor sit amet consectetur. Turpis consectetur.",
+      img: img1,
+    },
+    {
+      key: "Lorem ipsum dolor sit amet consectetur. Turpis consectetur.",
+      text: "Lorem ipsum dolor sit amet consectetur. Turpis consectetur.",
+      img: img2,
+    },
+    {
+      key: "Lorem ipsum dolor sit amet consectetur. Turpis consectetur.",
+      text: "Lorem ipsum dolor sit amet consectetur. Turpis consectetur.",
+      img: img3,
+    },
+  ];
   return (
     <main>
       <section className={`bg-gray-300 `}>
@@ -45,20 +67,17 @@ const Main = () => {
           </p>
         </div>
       </section>
-      <div>
-
-        <div className="bg-[#B0CEAF] text-[40px] text-center py-12 font-bold">Updates and News Letters</div>
-        <div className="flex row basis-1/3">
-        <NewsCard></NewsCard>
-        <NewsCard></NewsCard>
-        <NewsCard></NewsCard>
+      <div className="bg-[#B0CEAF]">
+        <div className=" text-[40px] text-center py-12 font-bold">
+          Updates and News Letters
         </div>
-        
-        
+        <div className="flex px-36 row basis-1/3">
+          {cards.map((item) => (
+            <NewsCard key={item.key} data={item} />
+          ))}
+        </div>
       </div>
-
-    
-  
+      <Input type="text" />
     </main>
   );
 };
