@@ -1,9 +1,7 @@
 const Button = (props) => {
-  const { className } = props;
-
   return (
     <div className="">
-      <button className={` ${className}`}>{props.children}</button>
+      <button {...props}>{props.children}</button>
     </div>
   );
 };
