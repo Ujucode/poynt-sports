@@ -10,7 +10,7 @@ Join us in celebrating these incredible individuals!Support and Sponsor the ones
       </p>
 
       <div className=" flex justify-between w-100 max-w-screen-xl mx-auto p-4 md:py-5">
-        <a href="/some/valid/link" className="group relative block bg-black">
+        <a href="some/valid/link" className="group relative block bg-black">
           <img
             alt="Athlete"
             src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=386&q=80"
@@ -23,7 +23,7 @@ Join us in celebrating these incredible individuals!Support and Sponsor the ones
             </p>
 
             <p className="text-xl font-bold text-white-0 sm:text-2xl">
-              Tony Wayne
+              Player1
             </p>
 
             <div className="mt-32 sm:mt-48 lg:mt-64">
@@ -37,7 +37,7 @@ Join us in celebrating these incredible individuals!Support and Sponsor the ones
             </div>
           </div>
         </a>
-        <a href="/some/valid/link" className="group relative block bg-black">
+        <a href="some/valid/link" className="group relative block bg-black">
           <img
             alt="Athlete"
             src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=386&q=80"
@@ -46,11 +46,11 @@ Join us in celebrating these incredible individuals!Support and Sponsor the ones
 
           <div className="relative text-left p-4 sm:p-6 lg:p-8">
             <p className="text-sm font-medium uppercase tracking-widest text-pink-600">
-              Football
+              Cricket
             </p>
 
             <p className="text-xl font-bold text-white-0 sm:text-2xl">
-              Tony Wayne
+              Player2
             </p>
 
             <div className="mt-32 sm:mt-48 lg:mt-64">
@@ -73,10 +73,10 @@ Join us in celebrating these incredible individuals!Support and Sponsor the ones
 
           <div className="relative text-left border-x p-4 sm:p-6 lg:p-8">
             <p className="text-sm font-medium uppercase tracking-widest text-pink-600">
-              Football
+              Badminton
             </p>
             <p className="text-xl font-bold text-white-0 sm:text-2xl">
-              Tony Wayne
+              Player3
             </p>
 
             <div className="mt-32 sm:mt-48 lg:mt-64">
