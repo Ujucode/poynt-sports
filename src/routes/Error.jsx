@@ -1,11 +1,15 @@
-import Navbar from "../components/UI/Navbar";
+import { useRouteError } from "react-router-dom";
 
 const Error = () => {
+  const error = useRouteError();
   return (
     <>
-      <Navbar />
-      <div className="flex justify-center items-center h-screen bg-gradient-to-r from-green-200 to-green-700">
-        <h1 className="text-green-100 text-6xl">Something went wrong!</h1>
+      <div className=" h-screen bg-gradient-to-r from-green-200 to-green-700">
+        <h1>Oops!</h1>
+        <p>Sorry, an unexpected error has occurred.</p>
+        <p>
+          <i>{error.statusText || error.message}</i>
+        </p>
       </div>
     </>
   );

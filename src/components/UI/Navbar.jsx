@@ -9,7 +9,9 @@ const Navbar = () => {
       className={`flex justify-between items-center text-3xl text-gray-50 p-4 font-bold ${classes["header-container"]} bg-transparent]`}
     >
       <div>
-        <img src={logo} alt="Company logo" className="" />
+        <Link to="">
+          <img src={logo} alt="Company logo" className="" />
+        </Link>
       </div>
       <ul className="w-5/12 flex justify-around ">
         <li>
@@ -19,14 +21,14 @@ const Navbar = () => {
         </li>
 
         <li>
-          <Link to="/Events" className="">
+          <Link to="/events" className="">
             Events
           </Link>
         </li>
         <li>
-          <a href="/Contact" className="">
+          <Link to="/contact" className="">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
       <SignUpWrapper />
