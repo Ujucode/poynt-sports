@@ -2,26 +2,26 @@
 
 module.exports = {
   extends: [
-    'eslint:recommended',
-    'plugin:import/errors',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:jsx-a11y/recommended',
-    'plugin:react-hooks/recommended',
-    'prettier',
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier",
   ],
-  plugins: ['react-refresh', 'react', 'import', 'jsx-a11y'],
+  plugins: ["react-refresh", "react", "import", "jsx-a11y"],
   rules: {
-    'react/prop-types': 0,
-    'react/react-in-jsx-scope': 0,
-    'react-refresh/only-export-components': [
-      'warn',
+    "react/prop-types": 0,
+    "react/react-in-jsx-scope": 0,
+    "react-refresh/only-export-components": [
+      "warn",
       { allowConstantExport: true },
     ],
   },
   parserOptions: {
     ecmaVersion: 2022,
-    sourceType: 'module',
+    sourceType: "module",
     ecmaFeatures: {
       jsx: true,
     },
@@ -33,10 +33,10 @@ module.exports = {
   },
   settings: {
     react: {
-      version: '18.2',
+      version: "18.2",
     },
-    'import/resolver': {
-      node: { extensions: ['.js', '.jsx'] },
+    "import/resolver": {
+      node: { extensions: [".js", ".jsx"] },
     },
   },
 };
