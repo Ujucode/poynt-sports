@@ -135,7 +135,7 @@ function Main() {
         </div>
       </section>
 
-      <sction>
+      <sction className="">
         <div className="flex-wrap text-center top-0 py-4">
           <h1 className="mb-4 text-xl font-bold leading-none tracking-tight text-gray-800 md:text-4xl lg:text-5xl dark:text-white-0">
             Coaches
@@ -176,12 +176,12 @@ function Main() {
         </div>
       </sction>
 
-      <section>
-        <div className={``}>
-          <div className="bg-[#B0CEAF] text-[40px] text-center py-12 font-bold">
+      <section className="mb-16">
+        <div className="bg-[#B0CEAF] h-[70vh] mb-1">
+          <div className=" text-[40px] text-center py-12 font-bold ">
             Updates and News Letters
           </div>
-          <div className="flex row basis-1/3">
+          <div className="flex justify-around">
             <NewsCard></NewsCard>
             <NewsCard></NewsCard>
             <NewsCard></NewsCard>

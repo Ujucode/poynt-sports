@@ -1,19 +1,22 @@
 import img1 from "../../assets/new-updates1.png";
-import classes from "../Layout/Layout.module.css";
 
 const NewsCard = () => {
   return (
-    <div className={`${classes['header-container']} bg-[#B0CEAF]  pl-20`}>
-     <div><img className="py-4 h-60 w-80" src={img1} alt="" /></div>
-    <div className="text-[32px] font-medium leading-9">
-    Lorem ipsum dolor sit amet consectetur. Turpis consectetur.
+    <div className="w-80 ">
+      <div className="">
+        <img className="h-60 " src={img1} alt="" />
+      </div>
+      <div className="text-left mt-2 pl-1">
+        <h1 className="font-bold text-2xl uppercase">Title</h1>
+        <p className=" py-2">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi laborum
+          consequatur similique quas quaerat hic eum expedita! Dolore pariatur
+          omnis temporibus aliquam, numquam dicta cum fugiat quos officiis
+          quidem. Similique.
+        </p>
+      </div>
     </div>
-    <div className="text-[25px] font-normal leading-9 pt-4 pb-12">
-    Lorem ipsum dolor sit amet consectetur. Turpis consectetur. </div>
-    <div className="pb-12 text-[25px] font-medium"> <a className="text-[#50AD29]" href="">Read full article</a> </div>
-    </div>
-    
-  )
-}
+  );
+};
 
 export default NewsCard;
