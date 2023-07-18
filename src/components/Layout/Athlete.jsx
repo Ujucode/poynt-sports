@@ -1,12 +1,15 @@
-function Athlete(){
-  return(
-<div className="flex-wrap text-center top-0 py-4">
+function Athlete() {
+  return (
+    <div className="flex-wrap text-center top-0 py-4">
       <h1 className="mb-4 text-xl font-bold leading-none tracking-tight text-gray-800 md:text-4xl lg:text-5xl dark:text-white-0">
         Athletes
       </h1>
       <p className="mb-2 text-lg font-normal text-gray-600 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-      Discover the stars of the sports world on our website! We showcase exceptional athletes from various disciplines. Get ready to be inspired as we present their remarkable talents, achievements, and the potential they hold.
-Join us in celebrating these incredible individuals!Support and Sponsor the ones you are most impressed!
+        Discover the stars of the sports world on our website! We showcase
+        exceptional athletes from various disciplines. Get ready to be inspired
+        as we present their remarkable talents, achievements, and the potential
+        they hold. Join us in celebrating these incredible individuals!Support
+        and Sponsor the ones you are most impressed!
       </p>
 
       <div className=" flex justify-between w-100 max-w-screen-xl mx-auto p-4 md:py-5">
@@ -91,13 +94,28 @@ Join us in celebrating these incredible individuals!Support and Sponsor the ones
           </div>
         </a>
       </div>
-      <a href="/some/link/here" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900">
-    See more
-    <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg>
-</a>
-</div>
-)
+      <a
+        href="/some/link/here"
+        className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900"
+      >
+        See more
+        <svg
+          className="w-3.5 h-3.5 ml-2"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 14 10"
+        >
+          <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M1 5h12m0 0L9 1m4 4L9 9"
+          />
+        </svg>
+      </a>
+    </div>
+  );
 }
-export default Athlete
+export default Athlete;
