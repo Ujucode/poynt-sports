@@ -1,4 +1,4 @@
-import SocialIcons from "./SocialIcons";
+import SocialIcons from "../Layout/SocialIcons";
 const Footer = () => {
   return (
     <footer className="bg-stone-800 rounded-lg shadow dark:bg-gray-900 m-4">
