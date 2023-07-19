@@ -1,4 +1,4 @@
-const AtheleteCard = () => {
+const AthleteCard = () => {
   return (
     <div className="">
       <a href="/some/valid/link" className="group relative block bg-black ">
@@ -33,4 +33,4 @@ const AtheleteCard = () => {
   );
 };
 
-export default AtheleteCard;
+export default AthleteCard;

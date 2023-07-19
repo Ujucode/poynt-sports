@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import AtheleteCard from "./AtheleteCard";
+import AthleteCard from './AthleteCard'
 
-const AtheleteSection = () => {
+const AthleteSection = () => {
   return (
     <section className="my-16">
       <div className="flex-wrap text-center top-0 py-4">
@@ -17,9 +17,9 @@ const AtheleteSection = () => {
         </p>
 
         <div className=" grid grid-cols-3 gap-6">
-          <AtheleteCard />
-          <AtheleteCard />
-          <AtheleteCard />
+          <AthleteCard />
+          <AthleteCard />
+          <AthleteCard />
         </div>
         <div className="my-14">
           <Link
@@ -49,4 +49,4 @@ const AtheleteSection = () => {
   );
 };
 
-export default AtheleteSection;
+export default AthleteSection;

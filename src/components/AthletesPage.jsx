@@ -1,10 +1,10 @@
 import Header from "./UI/Header";
 import Navbar from "./UI/Navbar";
 import Main from "./UI/Main";
-//import AtheletesGallery from "./Layout/AtheletesGallery";
+import AthletesGallery from './Layout/AthletesGallery'
 import classes from "./Layout/Layout.module.css";
 
-const AtheletesPage = () => {
+const AthletesPage = () => {
   return (
     <>
       <Header
@@ -12,11 +12,11 @@ const AtheletesPage = () => {
       >
         <Navbar />
         <Main className={`${classes["header-container"]}`}>
-          {/* <AtheletesGallery /> */}
+          <AthletesGallery />
         </Main>
       </Header>
     </>
   );
 };
 
-export default AtheletesPage;
+export default AthletesPage;
