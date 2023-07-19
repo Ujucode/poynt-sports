@@ -2,7 +2,7 @@ import img1 from "../../assets/new-updates1.png";
 
 const NewsCard = () => {
   return (
-    <div className="w-80 ">
+    <div className=" ">
       <div className="">
         <img className="h-60 " src={img1} alt="" />
       </div>

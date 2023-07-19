@@ -1,10 +1,10 @@
-const CoachesCard = () => {
+const AtheleteCard = () => {
   return (
     <div className="">
       <a href="/some/valid/link" className="group relative block bg-black ">
         <img
           alt="Athlete"
-          src="https://images.unsplash.com/photo-1529932398402-e0b30f66a559?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=386&q=80"
           className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50 "
         />
 
@@ -33,4 +33,4 @@ const CoachesCard = () => {
   );
 };
 
-export default CoachesCard;
+export default AtheleteCard;
