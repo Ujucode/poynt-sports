@@ -1,10 +1,13 @@
-import Main from "./Layout/Main";
 import Header from "./UI/Header";
 import Navbar from "./UI/Navbar";
 import HeroMain from "./Layout/HeroMain";
 import HeroFooter from "./Layout/HeroFooter";
+import AthleteSection from "./Layout/AthleteSection";
+import CoachesSection from "./Layout/Coaches";
+import NewsAndUpdateSection from "./Layout/NewsAndUpdateSection";
+import Main from "./UI/Main";
 import classes from "./Layout/Layout.module.css";
-
+import LeaveAReply from "./Layout/LeaveAReply";
 const HomePage = () => {
   return (
     <>
@@ -15,7 +18,12 @@ const HomePage = () => {
         <HeroMain />
         <HeroFooter />
       </Header>
-      <Main />
+      <Main className={`${classes["header-container"]}`}>
+        <AthleteSection />
+        <CoachesSection />
+        <NewsAndUpdateSection />
+        <LeaveAReply />
+      </Main>
     </>
   );
 };

@@ -1,7 +1,7 @@
 import SocialIcons from "../Layout/SocialIcons";
 const Footer = () => {
   return (
-    <footer className="bg-stone-800 rounded-lg shadow dark:bg-gray-900 m-4">
+    <footer className="bg-stone-800 shadow dark:bg-gray-900 ">
       <div className="relative w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a

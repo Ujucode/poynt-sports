@@ -1,7 +1,7 @@
 import NewsCard from "../UI/NewsCard";
 import CoachesCard from "./CoachesCard";
 import classes from "./Layout.module.css";
-import LeaveAReply from "./LeaveAReply";
+
 function Main() {
   return (
     <main className={`${classes["header-container"]}`}>
@@ -18,7 +18,7 @@ function Main() {
             strive for greatness in our own lives lorem.
           </p>
 
-          <div className="flex justify-between max-w-screen-xl p-4 mx-auto  w-100 md:py-5">
+          <div className="flex justify-between max-w-screen-xl p-4 mx-auto w-100 md:py-5">
             <a
               href="/some/valid/link"
               className="relative block bg-black group"
@@ -148,7 +148,7 @@ function Main() {
             autem vero ipsam?
           </p>
 
-          <div className="flex justify-between max-w-screen-xl p-4 mx-auto  w-100 md:py-5">
+          <div className="flex justify-between max-w-screen-xl p-4 mx-auto w-100 md:py-5">
             <CoachesCard />
             <CoachesCard />
             <CoachesCard />
@@ -188,7 +188,6 @@ function Main() {
             <NewsCard></NewsCard>
           </div>
         </div>
-        <LeaveAReply />
       </section>
     </main>
   );
