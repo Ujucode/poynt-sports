@@ -1,19 +1,10 @@
-import { experimentalStyled as styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Unstable_Grid2";
+import AthleteCard from "./AthleteCard";
 
 const AthletesGallery = () => {
-  const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-    ...theme.typography.body2,
-    padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-  }));
-
   return (
-    <section>
+    <section className="my-20">
       <Box sx={{ flexGrow: 1 }}>
         <Grid
           container
@@ -22,7 +13,7 @@ const AthletesGallery = () => {
         >
           {Array.from(Array(15)).map((_, index) => (
             <Grid xs={2} sm={4} md={4} key={index}>
-              <Item>xs=2</Item>
+              <AthleteCard />
             </Grid>
           ))}
         </Grid>
