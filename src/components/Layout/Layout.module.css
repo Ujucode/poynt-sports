@@ -5,9 +5,8 @@
 
 .hero {
   background-image: linear-gradient(
-      90deg,
-      rgba(34, 33, 33, 0.705),
-      rgba(188, 240, 158, 0.4)
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
     ),
     url(/src/assets/hero.svg);
 }
