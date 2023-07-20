@@ -2,6 +2,7 @@ import { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import SignUpForm from "./SignUpForm";
+import Button from "../UI/Button";
 
 const style = {
   position: "absolute",
@@ -23,9 +24,10 @@ function SignUpWrapper() {
 
   return (
     <>
-      <button onClick={handleOpen}>
+      <Button onClick={handleOpen}>
         <p>Sign up</p>
-      </button>
+      </Button>
+
       <Modal
         open={open}
         onClose={handleClose}
