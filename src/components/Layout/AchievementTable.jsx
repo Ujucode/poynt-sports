@@ -1,27 +1,96 @@
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import Paper from "@mui/material/Paper";
 
 function createData(position, competiton, level, organizer, month, year) {
-  return {position, competiton, level, organizer, month, year};
+  return { position, competiton, level, organizer, month, year };
 }
 
 const rows = [
-  createData('1ST', 'UNDER 10 GIRLS SINGLES ASSAM STATE CHAMPION','STATE','ASSAM BADMINTON ASSOCIATION','JANUARY',2011),
-  createData('2ND', 'UNDER 10 GIRLS SINGLES ASSAM STATE CHAMPION','STATE','TEZPUR BADMINTON ASSOCIATION','FEBRUARY',2011),
-  createData('2ND', 'UNDER 10 GIRLS SINGLES ASSAM STATE CHAMPION','STATE','JORHAT BADMINTON ASSOCIATION','FEBRUARY',2011),
-  createData('RUNNERS UP', 'UNDER 10 GIRLS SINGLES ASSAM STATE CHAMPION','ZONAL','DULIAJAN BADMINTON ASSOCIATION','MARCH',2011),
-  createData('RUNNERS UP', 'UNDER 13 GIRLS SINGLES ASSAM STATE CHAMPION','STATE','DON BOSCO SCHOOL,GUWAHATI','JANUARY',2015),
-  createData('WINNER', 'UNDER 13 GIRLS DOUBLES ASSAM STATE CHAMPION','STATE','TEZPUR BADMINTON ASSOCIATION','FEBRUARY',2015),
-  createData('WINNER', 'UNDER 13 GIRLS DOUBLES ASSAM STATE CHAMPION','STATE','SIVSAGAR BADMINTON ASSOCIATION','FEBRUARY',2015),
-  createData('9TH', 'INDIA UNDER 13 GIRLS SINGLES','NATIONAL','INDIAN BADMINTON ASSOCIATION','DECEMBER',2015),
-  createData('CHAMPION', 'UNDER 15 GIRLS SINGLES ASSAM STATE','STATE','GOLAGHAT BADMINTON ASSOCIATION','JANUARY',2016),
-  createData('1ST', 'UNDER 15 GIRLS DOUBLES ASSAM STATE CHAMPION','STATE','GOLAGHAT BADMINTON ASSOCIATION','JANUARY',2016),
-
+  createData(
+    "1ST",
+    "UNDER 10 GIRLS SINGLES ASSAM STATE CHAMPION",
+    "STATE",
+    "ASSAM BADMINTON ASSOCIATION",
+    "JANUARY",
+    2011,
+  ),
+  createData(
+    "2ND",
+    "UNDER 10 GIRLS SINGLES ASSAM STATE CHAMPION",
+    "STATE",
+    "TEZPUR BADMINTON ASSOCIATION",
+    "FEBRUARY",
+    2011,
+  ),
+  createData(
+    "2ND",
+    "UNDER 10 GIRLS SINGLES ASSAM STATE CHAMPION",
+    "STATE",
+    "JORHAT BADMINTON ASSOCIATION",
+    "FEBRUARY",
+    2011,
+  ),
+  createData(
+    "RUNNERS UP",
+    "UNDER 10 GIRLS SINGLES ASSAM STATE CHAMPION",
+    "ZONAL",
+    "DULIAJAN BADMINTON ASSOCIATION",
+    "MARCH",
+    2011,
+  ),
+  createData(
+    "RUNNERS UP",
+    "UNDER 13 GIRLS SINGLES ASSAM STATE CHAMPION",
+    "STATE",
+    "DON BOSCO SCHOOL,GUWAHATI",
+    "JANUARY",
+    2015,
+  ),
+  createData(
+    "WINNER",
+    "UNDER 13 GIRLS DOUBLES ASSAM STATE CHAMPION",
+    "STATE",
+    "TEZPUR BADMINTON ASSOCIATION",
+    "FEBRUARY",
+    2015,
+  ),
+  createData(
+    "WINNER",
+    "UNDER 13 GIRLS DOUBLES ASSAM STATE CHAMPION",
+    "STATE",
+    "SIVSAGAR BADMINTON ASSOCIATION",
+    "FEBRUARY",
+    2015,
+  ),
+  createData(
+    "9TH",
+    "INDIA UNDER 13 GIRLS SINGLES",
+    "NATIONAL",
+    "INDIAN BADMINTON ASSOCIATION",
+    "DECEMBER",
+    2015,
+  ),
+  createData(
+    "CHAMPION",
+    "UNDER 15 GIRLS SINGLES ASSAM STATE",
+    "STATE",
+    "GOLAGHAT BADMINTON ASSOCIATION",
+    "JANUARY",
+    2016,
+  ),
+  createData(
+    "1ST",
+    "UNDER 15 GIRLS DOUBLES ASSAM STATE CHAMPION",
+    "STATE",
+    "GOLAGHAT BADMINTON ASSOCIATION",
+    "JANUARY",
+    2016,
+  ),
 ];
 export default function AchieveTable() {
   return (
@@ -42,7 +111,7 @@ export default function AchieveTable() {
           {rows.map((row) => (
             <TableRow
               key={row.name}
-              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+              sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
               <TableCell component="th" scope="row">
                 {row.position}

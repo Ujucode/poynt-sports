@@ -1,7 +1,7 @@
 import AchieveTable from "./AchievementTable";
-import Navbar from "./Navbar";
 import ProfileCard from "./profilecard";
 import Education from "./Edu-Pre";
+import Navbar from "../UI/Navbar"
 
 function Profile() {
   return (
@@ -11,7 +11,7 @@ function Profile() {
         <AchieveTable/>
         <Education/>        
     </profilepage>
-  )
+  );
 }
 
-export default Profile
+export default Profile;
