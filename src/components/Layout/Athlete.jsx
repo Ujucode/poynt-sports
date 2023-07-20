@@ -1,4 +1,5 @@
-function Athlete(){
+// import {Link} from "./Profile"
+ function Athlete(){
   return(
 <div className="flex-wrap text-center top-0 py-4">
       <h1 className="mb-4 text-xl font-bold leading-none tracking-tight text-gray-800 md:text-4xl lg:text-5xl dark:text-white-0">
@@ -10,7 +11,8 @@ Join us in celebrating these incredible individuals!Support and Sponsor the ones
       </p>
 
       <div className=" flex justify-between w-100 max-w-screen-xl mx-auto p-4 md:py-5">
-        <a href="some/valid/link" className="group relative block bg-black">
+      {/* <Link to="/profilecard" className="group relative block bg-black">  */}
+      <a href="/"className="group relative block bg-black">
           <img
             alt="Athlete"
             src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=386&q=80"
@@ -36,7 +38,8 @@ Join us in celebrating these incredible individuals!Support and Sponsor the ones
               </div>
             </div>
           </div>
-        </a>
+          </a>
+        {/* </Link> */}
         <a href="some/valid/link" className="group relative block bg-black">
           <img
             alt="Athlete"

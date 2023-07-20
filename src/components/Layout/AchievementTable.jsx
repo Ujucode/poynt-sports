@@ -23,10 +23,10 @@ const rows = [
   createData('1ST', 'UNDER 15 GIRLS DOUBLES ASSAM STATE CHAMPION','STATE','GOLAGHAT BADMINTON ASSOCIATION','JANUARY',2016),
 
 ];
-
 export default function AchieveTable() {
   return (
     <TableContainer component={Paper}>
+      <div className="text-center text-2xl font-bold pt-4 "> Achievements </div>
       <Table sx={{ minWidth: 650 }} aria-label="Achievements">
         <TableHead>
           <TableRow>

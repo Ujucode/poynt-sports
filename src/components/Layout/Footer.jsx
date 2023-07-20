@@ -1,11 +1,11 @@
 import SocialIcons from "./SocialIcons";
 const Footer = () => {
   return (
-    <footer className="bg-stone-800 rounded-lg shadow dark:bg-gray-900 m-4">
+    <footer className="bg-stone-800">
       <div className="relative w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a
-            href="http://localhost:5173/"
+            href="/"
             className="flex items-center mb-4 sm:mb-0"
           >
             <img
@@ -43,7 +43,7 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-400 sm:text-center dark:text-gray-400">
             © 2023{" "}
-            <a href="http://localhost:5173/" className="hover:underline">
+            <a href="/" className="hover:underline">
               PoyntSports™
             </a>
             . All Rights Reserved.
