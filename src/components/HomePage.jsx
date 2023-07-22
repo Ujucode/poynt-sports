@@ -2,7 +2,7 @@ import Header from "./UI/Header";
 import Navbar from "./UI/Navbar";
 import HeroMain from "./Layout/HeroMain";
 import HeroFooter from "./Layout/HeroFooter";
-import AthleteSection from './Layout/AthleteSection'
+import AthleteSection from "./Layout/AthleteSection";
 import CoachesSection from "./Layout/Coaches";
 import NewsAndUpdateSection from "./Layout/NewsAndUpdateSection";
 import Main from "./UI/Main";

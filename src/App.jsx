@@ -25,7 +25,9 @@ function App() {
         {
           path: "athletes",
           element: <AthletesPage />,
-          children: [],
+          children: [
+            {path:':atheleteId',element:<}
+          ],
         },
       ],
     },

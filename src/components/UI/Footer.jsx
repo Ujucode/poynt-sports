@@ -4,10 +4,7 @@ const Footer = () => {
     <footer className="bg-stone-800 shadow dark:bg-gray-900 ">
       <div className="relative w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <a
-            href="/"
-            className="flex items-center mb-4 sm:mb-0"
-          >
+          <a href="/" className="flex items-center mb-4 sm:mb-0">
             <img
               src="src/assets/logo.svg"
               className="h-7 mr-3"

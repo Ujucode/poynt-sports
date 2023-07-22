@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import AthleteCard from './AthleteCard'
+import AthleteCard from "./AthleteCard";
 
 const AthleteSection = () => {
   return (
