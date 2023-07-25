@@ -30,6 +30,11 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
+        <li>
+          <Link to="/account" className="">
+            Account
+          </Link>
+        </li>
       </ul>
       <SignUpWrapper />
     </nav>

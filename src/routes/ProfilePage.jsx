@@ -1,10 +1,10 @@
-import AchievementTable from "./Layout/AchievementTable";
-import classes from "./Layout/Layout.module.css";
-import Education from "./Layout/Edu-Pre";
-import Navbar from "./UI/Navbar";
-import Header from "./UI/Header";
-import Main from "./UI/Main";
-import ProfileCard from "./Layout/ProfileCard";
+import AchievementTable from "../components/Layout/AchievementTable";
+import classes from "../components/Layout/Layout.module.css";
+import Education from "../components/Layout/Edu-Pre";
+import Navbar from "../components/UI/Navbar";
+import Header from "../components/UI/Header";
+import Main from "../components/UI/Main";
+import ProfileCard from "../components/Layout/ProfileCard";
 
 function ProfilePage() {
   return (

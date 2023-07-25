@@ -1,11 +1,12 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Root from "./routes/Root";
 import Error from "./routes/Error";
-import HomePage from "./components/HomePage";
-import EventsPage from "./components/EventsPage";
-import ContactPage from "./components/ContactPage";
-import AthletesPage from "./components/AthletesPage";
-import ProfilePage from "./components/ProfilePage";
+import HomePage from "./routes/HomePage";
+import EventsPage from "./routes/EventsPage";
+import ContactPage from "./routes/ContactPage";
+import AthletesPage from "./routes/AthletesPage";
+import ProfilePage from "./routes/ProfilePage";
+import AccountPage from "./routes/AccountPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -29,6 +30,10 @@ function App() {
             { index: true, element: <AthletesPage /> },
             { path: ":athleteId", element: <ProfilePage /> },
           ],
+        },
+        {
+          path: "account",
+          element: <AccountPage />,
         },
       ],
     },

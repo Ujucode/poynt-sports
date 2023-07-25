@@ -1,5 +1,5 @@
-import Header from "./UI/Header";
-import Navbar from "./UI/Navbar";
+import Header from "../components/UI/Header";
+import Navbar from "../components/UI/Navbar";
 
 const EventsPage = () => {
   return (

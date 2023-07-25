@@ -21,7 +21,7 @@ const AthleteCard = ({ name }) => {
         </div>
       </div>
       <div className="p-1">
-        <p className="text-sm text-left font-medium uppercase tracking-widest text-pink-600">
+        <p className="text-sm text-left font-medium uppercase tracking-widest text-gray-600">
           Football
         </p>
 

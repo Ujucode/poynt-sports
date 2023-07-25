@@ -1,8 +1,8 @@
-import Header from "./UI/Header";
-import Navbar from "./UI/Navbar";
-import Main from "./UI/Main";
-import AthletesGallery from "./Layout/AthletesGallery";
-import classes from "./Layout/Layout.module.css";
+import Header from "../components/UI/Header";
+import Navbar from "../components/UI/Navbar";
+import Main from "../components/UI/Main";
+import AthletesGallery from "../components/Layout/AthletesGallery";
+import classes from "../components/Layout/Layout.module.css";
 
 const AthletesPage = () => {
   return (
