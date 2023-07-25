@@ -37,15 +37,13 @@ function Education() {
       <div className="text-center text-2xl font-bold pt-6 bg-white-1">
         Participations
         <div className="text-center text-lg font-medium pt-4 ">
-          {" "}
-          No data found{" "}
+          No data found
         </div>
         <div className="text-center text-2xl font-bold pt-6">
-          Other Informations{" "}
+          Other Informations
         </div>
         <div className="text-center text-lg font-medium pt-4 ">
-          {" "}
-          No data found{" "}
+          No data found
         </div>
       </div>
     </div>

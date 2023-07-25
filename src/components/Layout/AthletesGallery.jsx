@@ -1,16 +1,18 @@
 import FlowBiteCard from "../UI/FlowbiteCard";
 import MUIPagination from "../UI/MUIPagination";
-import MUISelect from "../UI/MUISelect";
+import MUIGroupSelect from "../UI/MUIGroupSelect";
+import { Link } from "react-router-dom";
 
 const AthletesGallery = () => {
   return (
     <section className="my-20 ">
-      <MUISelect />
-
+      <MUIGroupSelect profession="Played" />
       <div className="grid grid-cols-3 gap-16">
         {Array.from(Array(15)).map((_, index) => (
           <div key={index}>
-            <FlowBiteCard />
+            <Link to={`${index}`}>
+              <FlowBiteCard />
+            </Link>
           </div>
         ))}
       </div>

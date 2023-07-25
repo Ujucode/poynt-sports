@@ -7,7 +7,7 @@ import CoachesSection from "./Layout/Coaches";
 import NewsAndUpdateSection from "./Layout/NewsAndUpdateSection";
 import Main from "./UI/Main";
 import classes from "./Layout/Layout.module.css";
-import LeaveAReply from "./Layout/LeaveAReply";
+
 const HomePage = () => {
   return (
     <>

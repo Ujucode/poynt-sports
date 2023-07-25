@@ -1,7 +1,7 @@
-const AthleteCard = () => {
+const AthleteCard = ({ name }) => {
   return (
     <div className="">
-      <a href="/some/valid/link" className="group relative block bg-black ">
+      <div className="group relative block bg-black ">
         <img
           alt="Athlete"
           src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=386&q=80"
@@ -19,14 +19,14 @@ const AthleteCard = () => {
             </div>
           </div>
         </div>
-      </a>
+      </div>
       <div className="p-1">
         <p className="text-sm text-left font-medium uppercase tracking-widest text-pink-600">
           Football
         </p>
 
         <p className="text-xl text-left font-bold text-white-0 sm:text-2xl">
-          Tony Wayne
+          {name}
         </p>
       </div>
     </div>

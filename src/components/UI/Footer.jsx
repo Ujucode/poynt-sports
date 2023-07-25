@@ -1,15 +1,13 @@
 import SocialIcons from "../Layout/SocialIcons";
+import logo from "../../assets/logo.svg";
+
 const Footer = () => {
   return (
     <footer className="bg-stone-800 shadow dark:bg-gray-900 ">
       <div className="relative w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a href="/" className="flex items-center mb-4 sm:mb-0">
-            <img
-              src="src/assets/logo.svg"
-              className="h-7 mr-3"
-              alt="PoyntSports Logo"
-            />
+            <img src={logo} className="h-7 mr-3" alt="PoyntSports Logo" />
           </a>
 
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-400 sm:mb-0 dark:text-gray-400">

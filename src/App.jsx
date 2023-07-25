@@ -5,6 +5,7 @@ import HomePage from "./components/HomePage";
 import EventsPage from "./components/EventsPage";
 import ContactPage from "./components/ContactPage";
 import AthletesPage from "./components/AthletesPage";
+import ProfilePage from "./components/ProfilePage";
 
 function App() {
   const router = createBrowserRouter([
@@ -24,9 +25,9 @@ function App() {
         },
         {
           path: "athletes",
-          element: <AthletesPage />,
           children: [
-            {path:':atheleteId',element:<}
+            { index: true, element: <AthletesPage /> },
+            { path: ":athleteId", element: <ProfilePage /> },
           ],
         },
       ],

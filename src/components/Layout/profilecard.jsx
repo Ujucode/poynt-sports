@@ -1,5 +1,8 @@
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
-export default function ProfileCard() {
+import athlete from "../../assets/athlete.jpg";
+import athlete_1 from "../../assets/athlete1.jpg";
+
+function ProfileCard() {
   return (
     <div className="max-w-[1320px] md:py-[80] py-5 flex mx-0 sm:flex-row flex-col group ">
       <div className="basis-[5%] pb-5 "></div>
@@ -8,11 +11,7 @@ export default function ProfileCard() {
           National level Badminton Athlete
         </div>
         <div className="text-center font-bold text-xl">MINARA PAKIZA ULLAH</div>
-        <img
-          src="src\assets\athlete.jpg"
-          alt="athlete"
-          className="w-[500px] ml-40"
-        />
+        <img src={athlete} alt="athlete" className="w-[500px] ml-40" />
         <div className="flex gap-4 ">
           <div className="flex gap-2 pt-4 pl-40 ">
             <a
@@ -92,13 +91,11 @@ export default function ProfileCard() {
         </table>
         <div className="flex flex-col">
           {" "}
-          <img
-            src="src\assets\athlete1.jpg"
-            alt="profile1"
-            className="w-50 p-2 mt-2"
-          />{" "}
+          <img src={athlete_1} alt="profile1" className="w-50 p-2 mt-2" />{" "}
         </div>
       </div>
     </div>
   );
 }
+
+export default ProfileCard;

@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 import AthleteCard from "./AthleteCard";
 
+const DUMMY_ATHLETES = [
+  { id: 800, name: "Wayne Rooney" },
+  { id: 801, name: "Lionel Messi" },
+  { id: 802, name: "CR7" },
+];
+
 const AthleteSection = () => {
   return (
     <section className="my-16">
@@ -17,9 +23,13 @@ const AthleteSection = () => {
         </p>
 
         <div className=" grid grid-cols-3 gap-6">
-          <AthleteCard />
-          <AthleteCard />
-          <AthleteCard />
+          {DUMMY_ATHLETES.map((athlete) => (
+            <>
+              <Link to={`/athletes/${athlete.id}`}>
+                <AthleteCard key={athlete.id} name={athlete.name} />
+              </Link>
+            </>
+          ))}
         </div>
         <div className="my-14">
           <Link

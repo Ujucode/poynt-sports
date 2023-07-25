@@ -9,11 +9,11 @@ import {
   DUMMY_SPORTS,
 } from "./data";
 
-function MUISelect() {
+function MUIGroupSelect({ profession }) {
   return (
-    <div className="my-16 grid grid-col-4">
+    <div className="my-16 grid grid-cols-3">
       <FormControl sx={{ m: 1 }}>
-        <InputLabel htmlFor="grouped-select">State</InputLabel>
+        <InputLabel htmlFor="grouped-select">Sport</InputLabel>
         <Select defaultValue="" id="grouped-select" label="Grouping">
           <MenuItem value="">
             <em>None</em>
@@ -26,8 +26,23 @@ function MUISelect() {
           ))}
         </Select>
       </FormControl>
+
       <FormControl sx={{ m: 1 }}>
-        <InputLabel htmlFor="grouped-select">Sport</InputLabel>
+        <InputLabel htmlFor="grouped-select">State</InputLabel>
+        <Select defaultValue="" id="grouped-select" label="Grouping">
+          <MenuItem value="">
+            <em>None</em>
+          </MenuItem>
+          {states.map((state) => (
+            <MenuItem value={1} key={state}>
+              {state}
+            </MenuItem>
+          ))}
+        </Select>
+      </FormControl>
+
+      <FormControl sx={{ m: 1 }}>
+        <InputLabel htmlFor="grouped-select">District</InputLabel>
         <Select defaultValue="" id="grouped-select" label="Grouping">
           <MenuItem value="">
             <em>None</em>
@@ -41,20 +56,7 @@ function MUISelect() {
       </FormControl>
 
       <FormControl sx={{ m: 1 }}>
-        <InputLabel htmlFor="grouped-select">Played Upto</InputLabel>
-        <Select defaultValue="" id="grouped-select" label="Grouping">
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          {states.map((state) => (
-            <MenuItem value={1} key={state}>
-              {state}
-            </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
-      <FormControl sx={{ m: 1 }}>
-        <InputLabel htmlFor="grouped-select">District</InputLabel>
+        <InputLabel htmlFor="grouped-select">{profession} Upto</InputLabel>
         <Select defaultValue="" id="grouped-select" label="Grouping">
           <MenuItem value="">
             <em>None</em>
@@ -70,4 +72,4 @@ function MUISelect() {
   );
 }
 
-export default MUISelect;
+export default MUIGroupSelect;
