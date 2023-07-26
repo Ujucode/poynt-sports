@@ -2,6 +2,7 @@ import Input from "../UI/Input";
 import Button from "../UI/Button";
 import ArticleContent from "./ArticleContent";
 import LeaveAReply from "../Layout/LeaveAReply";
+import img1 from "../../assets/user-img.png";
 const ArticleMain = () => {
   return (
     <>
@@ -28,6 +29,13 @@ const ArticleMain = () => {
             <Button className="px-2 py-2 mr-1 text-sm border-2 rounded hover:bg-orange-400">
               SportsCulture
             </Button>
+          </div>
+          <hr className="my-12 " />
+          <div className="inline-flex">
+            <img className="h-24" src={img1} alt="" />
+            <div className="items-center mt-12 ml-4 text-xl font-bold hover:text-orange-300">
+              PALASH MAHANTA
+            </div>
           </div>
           <hr className="my-12 " />
           <LeaveAReply />
