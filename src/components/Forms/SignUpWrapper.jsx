@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Box from "@mui/material/Box";
+import {Box} from "@mui/material"; 
 import Modal from "@mui/material/Modal";
 import SignUpForm from "./SignUpForm";
 import Button from "../UI/Button";
