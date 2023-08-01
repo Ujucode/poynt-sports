@@ -1,8 +1,9 @@
-import AccountSettings from "../components/Layout/AccountSettings";
 import Header from "../components/UI/Header";
 import Main from "../components/UI/Main";
 import Navbar from "../components/UI/Navbar";
 import classes from "../components/Layout/Layout.module.css";
+import { Outlet } from "react-router-dom";
+import MUIVerticalTabs from "../components/UI/MUIVerticalTabs";
 
 const AccountPage = () => {
   return (
@@ -14,7 +15,9 @@ const AccountPage = () => {
         <Navbar />
       </Header>
       <Main className={`${classes["header-container"]}`}>
-        <AccountSettings />
+        <MUIVerticalTabs>
+          <Outlet />
+        </MUIVerticalTabs>
       </Main>
     </>
   );

@@ -24,11 +24,9 @@ const AthleteSection = () => {
 
         <div className=" grid grid-cols-3 gap-6">
           {DUMMY_ATHLETES.map((athlete) => (
-            <>
-              <Link to={`/athletes/${athlete.id}`}>
-                <AthleteCard key={athlete.id} name={athlete.name} />
-              </Link>
-            </>
+            <Link to={`/athletes/${athlete.id}`} key={athlete.id}>
+              <AthleteCard name={athlete.name} />
+            </Link>
           ))}
         </div>
         <div className="my-14">
