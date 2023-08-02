@@ -3,10 +3,10 @@ import Footer from "../components/UI/Footer";
 
 const Root = () => {
   return (
-    <>
-      <Outlet />
+    <div className="flex flex-col min-h-screen">
+      <Outlet className="flex-grow " />
       <Footer />
-    </>
+    </div>
   );
 };
 
