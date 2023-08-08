@@ -9,9 +9,7 @@ import ProfileCard from "../components/Layout/ProfileCard";
 function ProfilePage() {
   return (
     <>
-      <Header
-        className={`bg-gradient-to-r from-green-200 to-green-700  bg-no-repeat bg-cover bg-fixed flex flex-col justify-between text-gray-50`}
-      >
+      <Header className={`bg-gradient-to-r from-green-200 to-green-700 `}>
         <Navbar />
       </Header>
       <Main className={`${classes["header-container"]}`}>
