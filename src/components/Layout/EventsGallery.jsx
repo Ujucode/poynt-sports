@@ -1,5 +1,5 @@
 import { cardData } from "../../routes/event-data";
-import EventsCard from "../UI/EventsCard";
+import EventsCard from "../UI/Cards/EventsCard";
 import MUIGroupSelect from "../UI/MUIGroupSelect";
 
 const EventsGallery = () => {

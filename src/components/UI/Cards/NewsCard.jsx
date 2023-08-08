@@ -1,4 +1,4 @@
-import img1 from "../../assets/new-updates1.png";
+import img1 from "../../../assets/new-updates1.png";
 
 const NewsCard = () => {
   return (
