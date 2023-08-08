@@ -1,4 +1,4 @@
-import { cardData } from "../../routes/event-data";
+import { cardData } from "../../data/event-data";
 import EventsCard from "../UI/Cards/EventsCard";
 import MUIGroupSelect from "../UI/MUIGroupSelect";
 

@@ -1,4 +1,4 @@
-import FlowBiteCard from "../UI/FlowbiteCard";
+import FlowBiteCard from "../UI/Cards/FlowbiteCard";
 import MUIPagination from "../UI/MUIPagination";
 import MUIGroupSelect from "../UI/MUIGroupSelect";
 import { Link } from "react-router-dom";

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import classes from "./Layout.module.css";
+import classes from "../Layout/Layout.module.css";
 
 const HeroFooter = () => {
   return (

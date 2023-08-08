@@ -1,8 +1,8 @@
-import Header from "../components/UI/Header";
-import Main from "../components/UI/Main";
-import Navbar from "../components/UI/Navbar";
+import Header from "../components/Layout/Header";
+import Main from "../components/Layout/Main";
+import Navbar from "../components/Layout/Navbar";
 import classes from "../components/Layout/Layout.module.css";
-import VerticalTabs from "../components/Layout/VerticalTabs";
+import VerticalTabs from "../components/Account/VerticalTabs";
 
 const AccountPage = () => {
   return (

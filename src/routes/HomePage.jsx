@@ -1,11 +1,11 @@
-import Header from "../components/UI/Header";
-import Navbar from "../components/UI/Navbar";
-import HeroMain from "../components/Layout/HeroMain";
-import HeroFooter from "../components/Layout/HeroFooter";
-import AthleteSection from "../components/Layout/AthleteSection";
-import CoachesSection from "../components/Layout/CoachesSection";
-import NewsAndUpdateSection from "../components/Layout/NewsAndUpdateSection";
-import Main from "../components/UI/Main";
+import Header from "../components/Layout/Header";
+import Navbar from "../components/Layout/Navbar";
+import HeroMain from "../components/Home/HeroMain";
+import HeroFooter from "../components/Home/HeroFooter";
+import AthleteSection from "../components/Home/AthleteSection";
+import CoachesSection from "../components/Home/CoachesSection";
+import NewsAndUpdateSection from "../components/Home/NewsAndUpdateSection";
+import Main from "../components/Layout/Main";
 import classes from "../components/Layout/Layout.module.css";
 
 const HomePage = () => {

@@ -1,4 +1,4 @@
-import NewsCard from "../UI/NewsCard";
+import NewsCard from "../UI/Cards/NewsCard";
 
 const NewsAndUpdateSection = () => {
   return (

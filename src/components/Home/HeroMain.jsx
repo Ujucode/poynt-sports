@@ -1,5 +1,5 @@
 import Button from "../UI/Button";
-import classes from "./Layout.module.css";
+import classes from "../Layout/Layout.module.css";
 
 const HeroMain = () => {
   return (

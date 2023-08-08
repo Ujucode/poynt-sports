@@ -7,14 +7,14 @@ import ContactPage from "./routes/ContactPage";
 import AthletesPage from "./routes/AthletesPage";
 import ProfilePage from "./routes/ProfilePage";
 import AccountPage from "./routes/AccountPage";
-import UserProfile from "./components/Layout/UserProfile";
-import AddSkillsTab from "./components/Layout/AddSkillsTab";
-import Supports from "./components/Layout/Supports";
-import CreateEvent from "./components/Layout/CreateEvent";
-import EventDetail from "./components/Layout/EventDetail";
-import EventsAttended from "./components/Layout/EventsAttended";
-import CalenderTab from "./components/Layout/CalenderTab";
-import PostsTab from "./components/Layout/PostsTab";
+import UserProfile from "./components/Account/UserProfile";
+import AddSkillsTab from "./components/Account/AddSkillsTab";
+import Supports from "./components/Account/Supports";
+import CreateEvent from "./components/Account/CreateEvent";
+import EventDetail from "./components/Account/EventDetail";
+import EventsAttended from "./components/Account/EventsAttended";
+import CalenderTab from "./components/Account/CalenderTab";
+import PostsTab from "./components/Account/PostsTab";
 
 function App() {
   const router = createBrowserRouter([

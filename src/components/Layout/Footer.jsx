@@ -1,4 +1,4 @@
-import SocialIcons from "../Layout/SocialIcons";
+import SocialIcons from "./SocialIcons";
 import logo from "../../assets/logo.svg";
 
 const Footer = () => {

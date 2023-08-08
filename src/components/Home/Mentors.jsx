@@ -1,15 +1,17 @@
-function Official() {
+function Mentors() {
   return (
     <div className="flex-wrap text-center top-0 py-4">
       <h1 className="mb-4 text-xl font-bold leading-none tracking-tight text-gray-800 md:text-4xl lg:text-5xl dark:text-white-0">
-        Sports Officials
+        Mentors & Ex-Athletes
       </h1>
       <p className="mb-2 text-lg font-normal text-gray-600 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-        We highlight the unsung heroes who play crucial roles in maintaining
-        fairness, health, and performance in sports. Explore our listings to
-        learn about experienced umpires, referees, curators, physiotherapists,
-        dieticians, and more. Discover the professionals behind the scenes who
-        contribute to the success of athletes and teams.
+        Explore the stories of legendary ex-athletes turned mentors. These icons
+        of the sporting world have left an indelible mark on their respective
+        disciplines. From record-breaking achievements to unforgettable moments,
+        we delve into the journeys and experiences of these exceptional
+        individuals who have transitioned from athletes to inspiring figures in
+        the sports landscape. Get mentorship from the ones who have reached
+        where you want to be.
       </p>
 
       <div className=" flex justify-between w-100 max-w-screen-xl mx-auto p-4 md:py-5">
@@ -118,4 +120,4 @@ function Official() {
     </div>
   );
 }
-export default Official;
+export default Mentors;

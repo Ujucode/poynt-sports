@@ -1,9 +1,9 @@
 import { useRouteError } from "react-router-dom";
-import Navbar from "../components/UI/Navbar";
+import Navbar from "../components/Layout/Navbar";
 import classes from "../components/Layout/Layout.module.css";
-import Header from "../components/UI/Header";
-import Footer from "../components/UI/Footer";
-import Main from "../components/UI/Main";
+import Header from "../components/Layout/Header";
+import Footer from "../components/Layout/Footer";
+import Main from "../components/Layout/Main";
 
 const Error = () => {
   const error = useRouteError();

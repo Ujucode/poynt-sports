@@ -1,6 +1,6 @@
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
-import athlete from "../../assets/athlete.jpg";
-import athlete_1 from "../../assets/athlete1.jpg";
+import athlete from "../../../assets/athlete.jpg";
+import athlete_1 from "../../../assets/athlete1.jpg";
 
 function ProfileCard() {
   return (

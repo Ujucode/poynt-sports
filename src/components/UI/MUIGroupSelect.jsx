@@ -7,7 +7,7 @@ import {
   played_upto,
   assam_districts,
   DUMMY_SPORTS,
-} from "./data";
+} from "../../data/data";
 
 function MUIGroupSelect({ profession }) {
   return (

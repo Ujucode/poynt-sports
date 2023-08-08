@@ -1,4 +1,4 @@
-function Training() {
+function TrainingClubsAndInstitutes() {
   return (
     <div className="flex-wrap text-center top-0 py-4">
       <h1 className="mb-4 text-xl font-bold leading-none tracking-tight text-gray-800 md:text-4xl lg:text-5xl dark:text-white-0">
@@ -119,4 +119,4 @@ function Training() {
     </div>
   );
 }
-export default Training;
+export default TrainingClubsAndInstitutes;
