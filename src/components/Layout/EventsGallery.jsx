@@ -7,7 +7,7 @@ const EventsGallery = () => {
     <section className="my-10">
       <MUIGroupSelect />
       <div className="mt-10">
-        {Array.from(Array(5)).map((_, index) => (
+        {Array.from(Array(3)).map((_, index) => (
           <EventsCard
             key={index}
             title={cardData[index % cardData.length].title}

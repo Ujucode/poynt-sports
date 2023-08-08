@@ -3,7 +3,7 @@ import MUIVerticalTabs from "../UI/MUIVerticalTabs";
 
 const VerticalTabs = () => {
   return (
-    <section className="my-10">
+    <section className="my-10 ">
       <MUIVerticalTabs>
         <Outlet />
       </MUIVerticalTabs>
