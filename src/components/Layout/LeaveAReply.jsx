@@ -1,4 +1,3 @@
-import Input from "../UI/Input";
 import Button from "../UI/Button";
 const LeaveAReply = () => {
   return (

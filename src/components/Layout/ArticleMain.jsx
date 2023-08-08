@@ -50,19 +50,19 @@ const ArticleMain = () => {
           <hr className="my-12 " />
           <div>
             <p className="text-4xl font-bold ">Recent Posts</p>
-            <a className="pb-3 hover:text-orange-300" href="">
+            <a className="pb-3 hover:text-orange-300" href="/">
               <br />
               Bordoloi Trophy: The Forgotten Copa America of North East India
             </a>
-            <a className="pb-3 hover:text-orange-300" href="">
+            <a className="pb-3 hover:text-orange-300" href="/">
               <br />
               Bordoloi Trophy: The Forgotten Copa America of North East India
             </a>
-            <a className="pb-3 hover:text-orange-300" href="">
+            <a className="pb-3 hover:text-orange-300" href="/">
               <br />
               Bordoloi Trophy: The Forgotten Copa America of North East India
             </a>
-            <a className="pb-3 hover:text-orange-300" href="">
+            <a className="pb-3 hover:text-orange-300" href="/">
               <br />
               Bordoloi Trophy: The Forgotten Copa America of North East India
             </a>
