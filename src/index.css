@@ -7,4 +7,29 @@
     font-family: "Rubik", sans-serif;
     font-family: "Roboto", sans-serif;
   }
+
+  /* Sticky Footer - footer sticks to bottom when content smaller than container but is pushed down when content grows larger than container */
+
+  html,
+  body {
+    /* min-height: 100%; */
+    /* @apply min-h-full; */
+  }
+  #root {
+    /* display: flex;
+    flex-direction: column; */
+    @apply flex;
+    @apply flex-col;
+    @apply min-h-screen;
+  }
+  main {
+    /* flex: 1 0 auto; */
+    @apply grow;
+    @apply shrink-0;
+    @apply basis-auto;
+  }
+  footer {
+    /* flex-shrink: 0; */
+    @apply shrink-0;
+  }
 }
