@@ -7,12 +7,12 @@ import ContactPage from "./routes/ContactPage";
 import AthletesPage from "./routes/AthletesPage";
 import ProfilePage from "./routes/ProfilePage";
 import AccountPage from "./routes/AccountPage";
-import UserProfile from "./components/Account/UserProfile";
+import UserProfileTab from "./components/Account/UserProfileTab";
 import AddSkillsTab from "./components/Account/AddSkillsTab";
-import Supports from "./components/Account/Supports";
-import CreateEvent from "./components/Account/CreateEvent";
-import EventDetail from "./components/Account/EventDetail";
-import EventsAttended from "./components/Account/EventsAttended";
+import SupportsTab from "./components/Account/SupportsTab";
+import CreateEventTab from "./components/Account/CreateEventTab";
+import EventDetailTab from "./components/Account/EventDetailTab";
+import EventsAttendedTab from "./components/Account/EventsAttendedTab";
 import CalenderTab from "./components/Account/CalenderTab";
 import PostsTab from "./components/Account/PostsTab";
 
@@ -43,12 +43,12 @@ function App() {
           path: "account",
           element: <AccountPage />,
           children: [
-            { index: true, element: <UserProfile /> },
+            { index: true, element: <UserProfileTab /> },
             { path: "add-skills", element: <AddSkillsTab /> },
-            { path: "supports", element: <Supports /> },
-            { path: "create-event", element: <CreateEvent /> },
-            { path: "event-details", element: <EventDetail /> },
-            { path: "events-attended", element: <EventsAttended /> },
+            { path: "supports", element: <SupportsTab /> },
+            { path: "create-event", element: <CreateEventTab /> },
+            { path: "event-details", element: <EventDetailTab /> },
+            { path: "events-attended", element: <EventsAttendedTab /> },
             { path: "calender", element: <CalenderTab /> },
             { path: "posts", element: <PostsTab /> },
           ],

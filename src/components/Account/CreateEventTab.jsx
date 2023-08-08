@@ -2,7 +2,7 @@ import { InputLabel } from "@mui/material";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 
-const CreateEvent = () => {
+const CreateEventTab = () => {
   return (
     <Box
       sx={{
@@ -34,4 +34,4 @@ const CreateEvent = () => {
   );
 };
 
-export default CreateEvent;
+export default CreateEventTab;
