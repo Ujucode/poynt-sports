@@ -15,6 +15,7 @@ function TabPanel(props) {
       id={`vertical-tabpanel-${index}`}
       aria-labelledby={`vertical-tab-${index}`}
       {...other}
+      style={{ flexGrow: 1 }}
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
@@ -46,7 +47,6 @@ function MUIVerticalTabs(props) {
         flexGrow: 1,
         bgcolor: "background.paper",
         display: "flex",
-        height: 600,
       }}
     >
       <Tabs
