@@ -94,9 +94,27 @@ function MUIVerticalTabs(props) {
           to="calender"
           component={Link}
         />
-        <Tab label="Posts" {...a11yProps(7)} to="posts" component={Link} />
+        <Tab 
+        label="Posts" 
+        {...a11yProps(7)} 
+        to="posts"
+         component={Link} 
+         />
+         <Tab
+          label="Education Details"
+          {...a11yProps(8)}
+          to="education-info"
+          component={Link}
+        />
+         <Tab
+          label="Playing Career"
+          {...a11yProps(9)}
+          to="playing-career"
+          component={Link}
+        />
+
       </Tabs>
-      {Array.from(Array(8)).map((_, index) => (
+      {Array.from(Array(10)).map((_, index) => (
         <TabPanel key={index} value={value} index={index}>
           {props.children}
         </TabPanel>
