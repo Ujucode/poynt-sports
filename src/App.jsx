@@ -15,6 +15,7 @@ import EventDetailTab from "./components/Account/EventDetailTab";
 import EventsAttendedTab from "./components/Account/EventsAttendedTab";
 import CalenderTab from "./components/Account/CalenderTab";
 import PostsTab from "./components/Account/PostsTab";
+import NewsAndUpdatesPage from "./routes/NewsAndUpdatesPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -52,6 +53,10 @@ function App() {
             { path: "calender", element: <CalenderTab /> },
             { path: "posts", element: <PostsTab /> },
           ],
+        },
+        {
+          path: "news-and-updates",
+          element: <NewsAndUpdatesPage />,
         },
       ],
     },

@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
 import img1 from "../../../assets/new-updates1.png";
 
 const NewsCard = () => {
   return (
     <div className=" ">
       <div className="">
-        <img className=" w-96" src={img1} alt="" />
+        <Link to="/news-and-updates">
+          <img className=" w-96" src={img1} alt="" />
+        </Link>
       </div>
       <div className="text-left mt-2 pl-1">
         <h1 className="font-bold text-2xl uppercase">Title</h1>
