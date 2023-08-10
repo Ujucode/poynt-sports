@@ -16,6 +16,10 @@ import EventsAttendedTab from "./components/Account/EventsAttendedTab";
 import CalenderTab from "./components/Account/CalenderTab";
 import PostsTab from "./components/Account/PostsTab";
 import NewsAndUpdatesPage from "./routes/NewsAndUpdatesPage";
+import AchieveCertificate from "./components/Account/AchieveCertificate";
+import Participation from "./components/Account/Participation";
+import BankAccount from "./components/Account/BankAccount";
+import Sponsorship from "./components/Account/Sponsorship";
 
 function App() {
   const router = createBrowserRouter([
@@ -52,6 +56,10 @@ function App() {
             { path: "events-attended", element: <EventsAttendedTab /> },
             { path: "calender", element: <CalenderTab /> },
             { path: "posts", element: <PostsTab /> },
+            { path: "achievements-and-certificates", element: <AchieveCertificate /> },
+            { path: "participations", element: <Participation /> },
+            { path: "bank-account", element: <BankAccount /> },
+            { path: "sponsorship", element: <Sponsorship /> },
           ],
         },
         {
