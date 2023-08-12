@@ -7,6 +7,7 @@ const AthletesGallery = () => {
   return (
     <section className="my-20 ">
       <MUIGroupSelect profession="Played" />
+
       <div className="grid grid-cols-3 gap-16">
         {Array.from(Array(15)).map((_, index) => (
           <div key={index}>
