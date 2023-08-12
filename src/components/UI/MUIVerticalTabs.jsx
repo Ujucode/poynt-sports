@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { Link } from "react-router-dom";
 
@@ -17,11 +16,7 @@ function TabPanel(props) {
       {...other}
       style={{ flexGrow: 1 }}
     >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography component={"div"}>{children}</Typography>
-        </Box>
-      )}
+      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
     </div>
   );
 }
@@ -44,7 +39,7 @@ function MUIVerticalTabs(props) {
     <Box
       sx={{
         my: 5,
-        flexGrow: 1,
+
         bgcolor: "background.paper",
         display: "flex",
       }}
