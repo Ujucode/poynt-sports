@@ -67,7 +67,7 @@ const CreateEventTab = () => {
 
       <FormLabel sx={{ mt: "2rem" }}>
         <Typography variant="h5" gutterBottom>
-          Start Date And Time
+          Date And Time
         </Typography>
       </FormLabel>
       <Box className=" flex gap-2">
