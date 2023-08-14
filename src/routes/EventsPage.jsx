@@ -7,7 +7,7 @@ import EventsGallery from "../components/Events/EventsGallery";
 const EventsPage = () => {
   return (
     <>
-      <Header className="bg-gradient-to-r from-green-200 to-green-700 ">
+      <Header>
         <Navbar />
       </Header>
       <Main className={`${classes["header-container"]} `}>

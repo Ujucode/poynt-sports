@@ -7,7 +7,7 @@ import VerticalTabs from "../components/Account/VerticalTabs";
 const AccountPage = () => {
   return (
     <>
-      <Header className={`bg-gradient-to-r from-green-200 to-green-700`}>
+      <Header className={``}>
         <Navbar />
       </Header>
       <Main className={`${classes["header-container"]} `}>

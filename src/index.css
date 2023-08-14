@@ -32,6 +32,16 @@
     /* flex-shrink: 0; */
     @apply shrink-0;
   }
+
+  header {
+    @apply bg-gray-700;
+    /* @apply bg-gradient-to-r  from-teal-100 to-slate-800; */
+    /* background: radial-gradient(
+      circle at 10% 20%,
+      rgb(220, 217, 249) 0%,
+      rgb(172, 224, 217) 89.8%
+    ); */
+  }
 }
 
 @layer components {

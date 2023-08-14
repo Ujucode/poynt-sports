@@ -7,7 +7,7 @@ import classes from "../components/Layout/Layout.module.css";
 const AthletesPage = () => {
   return (
     <>
-      <Header className={`bg-gradient-to-r from-green-200 to-green-700`}>
+      <Header>
         <Navbar />
       </Header>
       <Main className={`${classes["header-container"]}`}>
