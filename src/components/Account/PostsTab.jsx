@@ -11,6 +11,7 @@ import {
 import { quillModules, quillFormats } from "../UI/TextEditorConfig";
 import { useRef, useState } from "react";
 import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css"; // Import the styles
 
 const PostsTab = () => {
   const [content, setContent] = useState("");

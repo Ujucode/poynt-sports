@@ -14,6 +14,7 @@ import { MobileDateTimePicker } from "@mui/x-date-pickers";
 import { useRef, useState } from "react";
 import ReactQuill from "react-quill";
 import { quillFormats, quillModules } from "../UI/TextEditorConfig";
+import "react-quill/dist/quill.snow.css"; // Import the styles
 
 const CreateEventTab = () => {
   const [content, setContent] = useState("");
@@ -87,8 +88,9 @@ const CreateEventTab = () => {
           Event Details
         </Typography>
       </FormLabel>
+
       <ReactQuill
-        placeholder="Tell your story..."
+        placeholder="Event Details..."
         value={content}
         onChange={handleEditorChange}
         modules={quillModules}
