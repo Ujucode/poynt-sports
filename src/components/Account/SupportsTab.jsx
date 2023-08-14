@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import AthleteCard from "../UI/Cards/AthleteCard";
 
 const randomNames = [
@@ -10,11 +11,11 @@ const randomNames = [
 
 const SupportsTab = () => {
   return (
-    <div className="grid grid-cols-1 ">
+    <Box className="grid grid-cols-3 gap-5 ">
       {randomNames.map((name, index) => (
         <AthleteCard key={index} name={name} />
       ))}
-    </div>
+    </Box>
   );
 };
 

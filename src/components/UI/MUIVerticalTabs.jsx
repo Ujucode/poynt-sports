@@ -14,9 +14,9 @@ function TabPanel(props) {
       id={`vertical-tabpanel-${index}`}
       aria-labelledby={`vertical-tab-${index}`}
       {...other}
-      style={{ flexGrow: 1 }}
+      className=""
     >
-      {value === index && <Box sx={{ p: 3, maxWidth: 1035 }}>{children}</Box>}
+      {value === index && <Box className="p-6 w-[1030px]">{children}</Box>}
     </div>
   );
 }
@@ -38,10 +38,10 @@ function MUIVerticalTabs(props) {
   return (
     <Box
       sx={{
+        flexGrow: 1,
         my: 5,
         bgcolor: "background.paper",
         display: "flex",
-        flexGrow: 1,
       }}
     >
       <Tabs
@@ -60,9 +60,27 @@ function MUIVerticalTabs(props) {
           component={Link}
         />
         <Tab
+          label="Education"
+          {...a11yProps(8)}
+          to="education"
+          component={Link}
+        />
+        <Tab
+          label="Playing Career"
+          {...a11yProps(9)}
+          to="playing-career"
+          component={Link}
+        />
+        <Tab
           label="My Supports"
           {...a11yProps(2)}
           to="supports"
+          component={Link}
+        />
+        <Tab
+          label="Events Attended"
+          {...a11yProps(5)}
+          to="events-attended"
           component={Link}
         />
         <Tab
@@ -77,37 +95,14 @@ function MUIVerticalTabs(props) {
           to="event-details"
           component={Link}
         />
-        <Tab
-          label="Events Attended"
-          {...a11yProps(5)}
-          to="events-attended"
-          component={Link}
-        />
+
         <Tab
           label="Calender"
           {...a11yProps(6)}
           to="calender"
           component={Link}
         />
-        <Tab 
-        label="Posts" 
-        {...a11yProps(7)} 
-        to="posts"
-         component={Link} 
-         />
-         <Tab
-          label="Education Details"
-          {...a11yProps(8)}
-          to="education-info"
-          component={Link}
-        />
-         <Tab
-          label="Playing Career"
-          {...a11yProps(9)}
-          to="playing-career"
-          component={Link}
-        />
-
+        <Tab label="Posts" {...a11yProps(7)} to="posts" component={Link} />
       </Tabs>
       {Array.from(Array(10)).map((_, index) => (
         <TabPanel key={index} value={value} index={index}>

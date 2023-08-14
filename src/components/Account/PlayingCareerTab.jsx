@@ -1,20 +1,33 @@
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+import { Select, InputLabel, MenuItem, Button, TextField } from "@mui/material";
+import {
+  state as statesData,
+  assam_districts as assamDistricts,
+  played_upto,
+} from "../../data/data";
 
-import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
-import { Select, InputLabel, MenuItem, Button, TextField } from '@mui/material';
-import { state as statesData, assam_districts as assamDistricts, played_upto } from '../UI/data';
-
-const PlayingCareer = () => {
+const PlayingCareerTab = () => {
   const getCurrentYear = new Date().getFullYear(); // current year
   const listOfYears = Array.from({ length: 30 }, (_, i) => getCurrentYear - i);
 
   const months = [
-    'January', 'February', 'March', 'April', 'May', 'June',
-    'July', 'August', 'September', 'October', 'November', 'December'
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
   ];
 
-  const countries = ['India', 'USA', 'UK', /* Other countries */];
-//   Try using Box 
+  const countries = ["India", "USA", "UK" /* Other countries */];
+  //   Try using Box
   return (
     <div>
       <Typography variant="h6" gutterBottom>
@@ -23,7 +36,12 @@ const PlayingCareer = () => {
       <Grid container spacing={4}>
         <Grid item xs={7}>
           <InputLabel required>Played Upto Level</InputLabel>
-          <Select labelId="played-upto-label" id="played-upto" size="small" fullWidth>
+          <Select
+            labelId="played-upto-label"
+            id="played-upto"
+            size="small"
+            fullWidth
+          >
             {played_upto.map((level) => (
               <MenuItem value={level} key={level}>
                 {level}
@@ -33,7 +51,12 @@ const PlayingCareer = () => {
         </Grid>
         <Grid item xs={7}>
           <InputLabel required>Played From (year)</InputLabel>
-          <Select labelId="demo-simple-select-label" id="demo-simple-select" size="small" fullWidth>
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            size="small"
+            fullWidth
+          >
             {listOfYears.map((year) => (
               <MenuItem value={year} key={year}>
                 {year}
@@ -43,7 +66,12 @@ const PlayingCareer = () => {
         </Grid>
         <Grid item xs={7}>
           <InputLabel required>Played To (year)</InputLabel>
-          <Select labelId="demo-simple-select-label" id="demo-simple-select" size="small" fullWidth>
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            size="small"
+            fullWidth
+          >
             {listOfYears.map((year) => (
               <MenuItem value={year} key={year}>
                 {year}
@@ -52,16 +80,21 @@ const PlayingCareer = () => {
           </Select>
         </Grid>
         <Grid item xs={7}>
-        <Typography variant="h9" gutterBottom>
-        Playing Career (Current)
-      </Typography>
-      </Grid>
+          <Typography variant="h9" gutterBottom>
+            Playing Career (Current)
+          </Typography>
+        </Grid>
         <Grid item xs={12} sm={6}>
           <TextField label="Team, Club, Institution Name" fullWidth required />
         </Grid>
         <Grid item xs={12} sm={6}>
           <InputLabel required>Organisation Type</InputLabel>
-          <Select labelId="organisation-type-label" id="organisation-type" size="small" fullWidth>
+          <Select
+            labelId="organisation-type-label"
+            id="organisation-type"
+            size="small"
+            fullWidth
+          >
             <MenuItem value="Team">Team</MenuItem>
             <MenuItem value="Club">Club</MenuItem>
             <MenuItem value="Institution">Institution</MenuItem>
@@ -69,7 +102,12 @@ const PlayingCareer = () => {
         </Grid>
         <Grid item xs={12} sm={6}>
           <InputLabel required>Played From (Month)</InputLabel>
-          <Select labelId="played-from-month-label" id="played-from-month" size="small" fullWidth>
+          <Select
+            labelId="played-from-month-label"
+            id="played-from-month"
+            size="small"
+            fullWidth
+          >
             {months.map((month) => (
               <MenuItem value={month} key={month}>
                 {month}
@@ -79,7 +117,12 @@ const PlayingCareer = () => {
         </Grid>
         <Grid item xs={12} sm={6}>
           <InputLabel required>Played From (Year)</InputLabel>
-          <Select labelId="played-from-year-label" id="played-from-year" size="small" fullWidth>
+          <Select
+            labelId="played-from-year-label"
+            id="played-from-year"
+            size="small"
+            fullWidth
+          >
             {listOfYears.map((year) => (
               <MenuItem value={year} key={year}>
                 {year}
@@ -95,7 +138,12 @@ const PlayingCareer = () => {
         </Grid>
         <Grid item xs={12} sm={6}>
           <InputLabel required>Assam District</InputLabel>
-          <Select labelId="assam-district-label" id="assam-district" size="small" fullWidth>
+          <Select
+            labelId="assam-district-label"
+            id="assam-district"
+            size="small"
+            fullWidth
+          >
             {assamDistricts.map((district) => (
               <MenuItem value={district} key={district}>
                 {district}
@@ -134,18 +182,28 @@ const PlayingCareer = () => {
             Add New
           </Button>
         </Grid>
-      
+
         <Grid item xs={7}>
-        <Typography variant="h9" gutterBottom>
-        Playing Career (Previous)
-      </Typography>
-      </Grid>
+          <Typography variant="h9" gutterBottom>
+            Playing Career (Previous)
+          </Typography>
+        </Grid>
         <Grid item xs={12} sm={6}>
-          <TextField label="Team, Club, Institution Name" size="small" fullWidth required />
+          <TextField
+            label="Team, Club, Institution Name"
+            size="small"
+            fullWidth
+            required
+          />
         </Grid>
         <Grid item xs={12} sm={6}>
           <InputLabel required>Organisation Type</InputLabel>
-          <Select labelId="organisation-type-label" id="organisation-type" size="small" fullWidth>
+          <Select
+            labelId="organisation-type-label"
+            id="organisation-type"
+            size="small"
+            fullWidth
+          >
             <MenuItem value="Team">Team</MenuItem>
             <MenuItem value="Club">Club</MenuItem>
             <MenuItem value="Institution">Institution</MenuItem>
@@ -153,7 +211,12 @@ const PlayingCareer = () => {
         </Grid>
         <Grid item xs={12} sm={6}>
           <InputLabel required>Played From (Month)</InputLabel>
-          <Select labelId="played-from-month-label" id="played-from-month" size="small" fullWidth>
+          <Select
+            labelId="played-from-month-label"
+            id="played-from-month"
+            size="small"
+            fullWidth
+          >
             {months.map((month) => (
               <MenuItem value={month} key={month}>
                 {month}
@@ -163,7 +226,12 @@ const PlayingCareer = () => {
         </Grid>
         <Grid item xs={12} sm={6}>
           <InputLabel required>Played From (Year)</InputLabel>
-          <Select labelId="played-from-year-label" id="played-from-year" size="small" fullWidth>
+          <Select
+            labelId="played-from-year-label"
+            id="played-from-year"
+            size="small"
+            fullWidth
+          >
             {listOfYears.map((year) => (
               <MenuItem value={year} key={year}>
                 {year}
@@ -179,7 +247,12 @@ const PlayingCareer = () => {
         </Grid>
         <Grid item xs={12} sm={6}>
           <InputLabel required>Assam District</InputLabel>
-          <Select labelId="assam-district-label" id="assam-district" size="small" fullWidth>
+          <Select
+            labelId="assam-district-label"
+            id="assam-district"
+            size="small"
+            fullWidth
+          >
             {assamDistricts.map((district) => (
               <MenuItem value={district} key={district}>
                 {district}
@@ -228,4 +301,4 @@ const PlayingCareer = () => {
   );
 };
 
-export default PlayingCareer;
+export default PlayingCareerTab;
