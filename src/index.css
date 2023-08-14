@@ -33,3 +33,12 @@
     @apply shrink-0;
   }
 }
+
+@layer components {
+}
+
+/* Text editor height */
+
+.ql-editor {
+  min-height: 10rem;
+}
