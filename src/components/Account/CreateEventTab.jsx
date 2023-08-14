@@ -7,25 +7,48 @@ import {
   FormGroup,
   FormControlLabel,
   Checkbox,
+  Paper,
 } from "@mui/material";
-import TextEditor from "../UI/TextEditor";
+
 import { MobileDateTimePicker } from "@mui/x-date-pickers";
 import { useRef, useState } from "react";
+import ReactQuill from "react-quill";
+import { quillFormats, quillModules } from "../UI/TextEditorConfig";
 
 const CreateEventTab = () => {
+  const [content, setContent] = useState("");
   const [startDate, setStartDate] = useState();
+  const [image, setImage] = useState();
   const [endDate, setEndDate] = useState();
   const uploadRef = useRef();
 
-  const handleUpload = () => {
+  const handleEditorChange = (newContent) => {
+    setContent(newContent);
+  };
+
+  const handleSave = (e) => {
+    // Here you can save the content to your backend or do any other necessary actions
+    e.preventDefault();
+    console.log(content);
+  };
+
+  const handleUpload = (e) => {
+    e.preventDefault();
     uploadRef.current.click();
+  };
+
+  const handleImageChange = (e) => {
+    e.preventDefault();
+    setImage(URL.createObjectURL(e.target.files[0]));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
+
     console.log({
       "event-title": data.get("event-title"),
+      "event-details": content,
       "event-location": data.get("event-location"),
       address: data.get("address"),
       state: data.get("state"),
@@ -36,12 +59,13 @@ const CreateEventTab = () => {
       "hide-event-time": data.get("hide-event-time"),
       "hide-event-end-time": data.get("hide-event-end-time"),
       recurring: data.get("recurring"),
+      "event-image": data.get("event-image").name,
     });
   };
 
   return (
     <FormControl
-      className="w-5/6 gap-2 "
+      className="w-full flex flex-col gap-2 "
       component={"form"}
       onSubmit={handleSubmit}
     >
@@ -63,7 +87,20 @@ const CreateEventTab = () => {
           Event Details
         </Typography>
       </FormLabel>
-      <TextEditor id="text-editor" />
+      <ReactQuill
+        placeholder="Tell your story..."
+        value={content}
+        onChange={handleEditorChange}
+        modules={quillModules}
+        formats={quillFormats}
+        name="event-details"
+      />
+      <button
+        onClick={handleSave}
+        className="p-2 w-[5rem] h-10 mt-2 bg-emerald-500 text-white rounded-md "
+      >
+        Save
+      </button>
 
       <FormLabel sx={{ mt: "2rem" }}>
         <Typography variant="h5" gutterBottom>
@@ -141,18 +178,42 @@ const CreateEventTab = () => {
         label="Upload Event Image "
         sx={{ style: "unset", width: "20rem" }}
       /> */}
-      <input ref={uploadRef} type="file" hidden />
+      <input
+        ref={uploadRef}
+        type="file"
+        accept="image/*,.png,.jpg"
+        hidden
+        name="event-image"
+        onChange={handleImageChange}
+      />
+
+      {image && (
+        <Paper variant="outlined" className=" p-5 w-2/6 mt-10">
+          <img
+            src={image}
+            alt="event img"
+            className="object-contain object-center mx-auto "
+          />
+        </Paper>
+      )}
+
       <button
-        className="p-2 w-40 bg-emerald-500 text-white rounded-md h-10"
+        id="upload-img"
+        className="p-2 w-40  bg-emerald-500 text-white rounded-md h-10"
         onClick={handleUpload}
       >
-        Upload Event Image
+        {image ? "Change Image" : "Upload Event Image"}
       </button>
+
+      <FormLabel htmlFor="upload-img" required>
+        Max size 5 MB
+      </FormLabel>
+
       <button
         type="submit"
         className="p-2 w-1/4 h-10 mt-20 bg-emerald-500 text-white rounded-md "
       >
-        Submit
+        Create Event
       </button>
     </FormControl>
   );

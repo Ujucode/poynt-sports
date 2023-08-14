@@ -16,7 +16,7 @@ function TabPanel(props) {
       {...other}
       style={{ flexGrow: 1 }}
     >
-      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+      {value === index && <Box sx={{ p: 3, maxWidth: 1035 }}>{children}</Box>}
     </div>
   );
 }
@@ -39,9 +39,9 @@ function MUIVerticalTabs(props) {
     <Box
       sx={{
         my: 5,
-
         bgcolor: "background.paper",
         display: "flex",
+        flexGrow: 1,
       }}
     >
       <Tabs

@@ -21,7 +21,6 @@ const TextEditor = () => {
         onChange={handleEditorChange}
         modules={quillModules}
         formats={quillFormats}
-        style={{ " div p": { maxHeight: 400 } }}
       />
       <button
         className="bg-emerald-500 text-white rounded-md w-20 h-10 mt-2"
