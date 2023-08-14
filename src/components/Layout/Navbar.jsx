@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/site-logo.png";
 import SignUpWrapper from "../Forms/SignUpWrapper";
 import classes from "../Layout/Layout.module.css";
 
@@ -9,8 +9,8 @@ const Navbar = () => {
       className={`flex justify-between items-center text-3xl text-gray-50 p-4 font-bold ${classes["header-container"]} bg-transparent]`}
     >
       <div>
-        <Link to="">
-          <img src={logo} alt="Company logo" className="" />
+        <Link to="/">
+          <img src={logo} alt="Company logo" className=" " />
         </Link>
       </div>
       <ul className="w-5/12 flex justify-around ">
