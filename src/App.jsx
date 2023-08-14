@@ -7,6 +7,7 @@ import ContactPage from "./routes/ContactPage";
 import AthletesPage from "./routes/AthletesPage";
 import ProfilePage from "./routes/ProfilePage";
 import AccountPage from "./routes/AccountPage";
+<<<<<<< HEAD
 import UserProfileTab from "./components/Account/UserProfileTab";
 import AddSkillsTab from "./components/Account/AddSkillsTab";
 import SupportsTab from "./components/Account/SupportsTab";
@@ -16,6 +17,18 @@ import EventsAttendedTab from "./components/Account/EventsAttendedTab";
 import CalenderTab from "./components/Account/CalenderTab";
 import PostsTab from "./components/Account/PostsTab";
 import NewsAndUpdatesPage from "./routes/NewsAndUpdatesPage";
+=======
+import UserProfile from "./components/Layout/UserProfile";
+import AddSkillsTab from "./components/Layout/AddSkillsTab";
+import Supports from "./components/Layout/Supports";
+import CreateEvent from "./components/Layout/CreateEvent";
+import EventDetail from "./components/Layout/EventDetail";
+import EventsAttended from "./components/Layout/EventsAttended";
+import CalenderTab from "./components/Layout/CalenderTab";
+import PostsTab from "./components/Layout/PostsTab";
+import EduForm from "./components/Layout/EduForm";
+import PlayingCareer from "./components/Layout/PlayingCareer";
+>>>>>>> origin/mandita-forms
 
 function App() {
   const router = createBrowserRouter([
@@ -51,6 +64,7 @@ function App() {
             { path: "event-details", element: <EventDetailTab /> },
             { path: "events-attended", element: <EventsAttendedTab /> },
             { path: "calender", element: <CalenderTab /> },
+            { path: "playing-career", element: <PlayingCareer /> },
             { path: "posts", element: <PostsTab /> },
           ],
         },
