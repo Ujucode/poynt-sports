@@ -1,6 +1,5 @@
-import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import { Select, InputLabel, MenuItem, Button, TextField } from "@mui/material";
+import { Select, FormLabel, InputLabel, MenuItem, TextField , Box} from "@mui/material";
 import {
   state as statesData,
   assam_districts as assamDistricts,
@@ -27,20 +26,40 @@ const PlayingCareerTab = () => {
   ];
 
   const countries = ["India", "USA", "UK" /* Other countries */];
-  //   Try using Box
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const data= Object.fromEntries(formData);
+    console.log({
+      ...data,
+      id: new Date().getTime(),
+    
+  })
+  }
   return (
-    <div>
+    <Box
+    className="w-full flex flex-col gap-5"
+    component={"form"}
+    onSubmit={handleFormSubmit}
+    >
+      <FormLabel>
       <Typography variant="h6" gutterBottom>
         Playing Career
       </Typography>
-      <Grid container spacing={4}>
-        <Grid item xs={7}>
-          <InputLabel required>Played Upto Level</InputLabel>
+      </FormLabel>
+     
+      <FormLabel>
+      <Typography variant="h6" gutterBottom>
+        Played upto level
+      </Typography>
+      </FormLabel>
           <Select
-            labelId="played-upto-label"
-            id="played-upto"
+          name="played-upto-level"
+            labelId="played-upto-level-label"
+            id="played-upto-level"
             size="small"
             fullWidth
+            defaultValue="" 
           >
             {played_upto.map((level) => (
               <MenuItem value={level} key={level}>
@@ -48,14 +67,20 @@ const PlayingCareerTab = () => {
               </MenuItem>
             ))}
           </Select>
-        </Grid>
-        <Grid item xs={7}>
-          <InputLabel required>Played From (year)</InputLabel>
+       
+      
+          <FormLabel>
+      <Typography variant="h6" gutterBottom>
+        Played From (Year)
+      </Typography>
+      </FormLabel>
           <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
+          name="played-from-year"
+            labelId="played-from-year-label"
+            id="played-from-year"
             size="small"
             fullWidth
+            defaultValue="" 
           >
             {listOfYears.map((year) => (
               <MenuItem value={year} key={year}>
@@ -63,14 +88,20 @@ const PlayingCareerTab = () => {
               </MenuItem>
             ))}
           </Select>
-        </Grid>
-        <Grid item xs={7}>
-          <InputLabel required>Played To (year)</InputLabel>
+       
+      
+          <FormLabel>
+      <Typography variant="h6" gutterBottom>
+        Played To (Year)
+      </Typography>
+      </FormLabel>
           <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
+          name="played-to-year"
+            labelId="played-to-year-label"
+            id="played-to-year"
             size="small"
             fullWidth
+            defaultValue="" 
           >
             {listOfYears.map((year) => (
               <MenuItem value={year} key={year}>
@@ -78,35 +109,46 @@ const PlayingCareerTab = () => {
               </MenuItem>
             ))}
           </Select>
-        </Grid>
-        <Grid item xs={7}>
+       
+          <FormLabel>
           <Typography variant="h9" gutterBottom>
             Playing Career (Current)
           </Typography>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField label="Team, Club, Institution Name" fullWidth required />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <InputLabel required>Organisation Type</InputLabel>
+          </FormLabel>
+    
+          <TextField label="Team, Club, Institution Name" fullWidth 
+          name="team-club-institute-name" />
+      
+      <FormLabel>
+          <Typography variant="h9" gutterBottom>
+           Organisation Type
+          </Typography>
+          </FormLabel>
           <Select
+          name="organisation-type"
             labelId="organisation-type-label"
             id="organisation-type"
             size="small"
             fullWidth
+            defaultValue="" 
           >
             <MenuItem value="Team">Team</MenuItem>
             <MenuItem value="Club">Club</MenuItem>
             <MenuItem value="Institution">Institution</MenuItem>
           </Select>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <InputLabel required>Played From (Month)</InputLabel>
+       
+          <FormLabel>
+          <Typography variant="h9" gutterBottom>
+            Played From (Month)
+          </Typography>
+          </FormLabel>
           <Select
+          name="played-from-month"
             labelId="played-from-month-label"
             id="played-from-month"
             size="small"
             fullWidth
+            defaultValue="" 
           >
             {months.map((month) => (
               <MenuItem value={month} key={month}>
@@ -114,14 +156,19 @@ const PlayingCareerTab = () => {
               </MenuItem>
             ))}
           </Select>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <InputLabel required>Played From (Year)</InputLabel>
+     
+          <FormLabel>
+          <Typography variant="h9" gutterBottom>
+            Played Fron (Year)
+          </Typography>
+          </FormLabel>
           <Select
-            labelId="played-from-year-label"
-            id="played-from-year"
+          name="played-from-year-org"
+            labelId="played-from-year-org-label"
+            id="played-from-year-org"
             size="small"
             fullWidth
+            defaultValue="" 
           >
             {listOfYears.map((year) => (
               <MenuItem value={year} key={year}>
@@ -129,20 +176,25 @@ const PlayingCareerTab = () => {
               </MenuItem>
             ))}
           </Select>
-        </Grid>
-        <Grid item xs={12}>
-          <TextField label="Address Line" fullWidth required />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField label="City/Town/Village" fullWidth required />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <InputLabel required>Assam District</InputLabel>
+      
+          <TextField label="Address Line" fullWidth  
+          name="address-line"/>
+    
+          <TextField label="City/Town/Village" fullWidth 
+          name="city-town-village" />
+       
+       <FormLabel>
+          <Typography variant="h9" gutterBottom>
+            Assam District
+          </Typography>
+          </FormLabel>
           <Select
+          name="assam-district"
             labelId="assam-district-label"
             id="assam-district"
             size="small"
             fullWidth
+            defaultValue="" 
           >
             {assamDistricts.map((district) => (
               <MenuItem value={district} key={district}>
@@ -150,72 +202,97 @@ const PlayingCareerTab = () => {
               </MenuItem>
             ))}
           </Select>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <InputLabel required>State</InputLabel>
-          <Select labelId="state-label" id="state" size="small" fullWidth>
+       
+          <FormLabel>
+          <Typography variant="h9" gutterBottom>
+            State
+          </Typography>
+          </FormLabel>
+          <Select 
+          name="state"
+          labelId="state-label" 
+          id="state" 
+          size="small" 
+          fullWidth
+          defaultValue="" 
+          >
             {statesData.map((state) => (
               <MenuItem value={state} key={state}>
                 {state}
               </MenuItem>
             ))}
           </Select>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <InputLabel required>Country</InputLabel>
-          <Select labelId="country-label" id="country" size="small" fullWidth>
+  
+          <FormLabel>
+          <Typography variant="h9" gutterBottom>
+            Country
+          </Typography>
+          </FormLabel>
+          <Select 
+          name="country"
+          labelId="country-label"
+           id="country"
+            size="small" 
+            fullWidth
+            defaultValue="" 
+            >
             {countries.map((country) => (
               <MenuItem value={country} key={country}>
                 {country}
               </MenuItem>
             ))}
           </Select>
-        </Grid>
-        <Grid item xs={12}>
-          <TextField label="Contact Number" fullWidth required />
-        </Grid>
-        <Grid item xs={12}>
-          <TextField label="Club/Team/Player Profile URL" fullWidth />
-        </Grid>
-        <Grid item xs={12} sm={7}>
-          <Button variant="outlined" size="small">
-            Add New
-          </Button>
-        </Grid>
-
-        <Grid item xs={7}>
+    
+          <TextField label="Contact Number" fullWidth  
+          name="contact"/>
+       
+          <TextField label="Club/Team/Player Profile URL" fullWidth
+          name="club-team-player-profile-url" />
+       
+       <button className="p-2 w-[10rem] h-10 mt-2 bg-emerald-500 text-white rounded-md ">
+        Add More
+      </button>
+     
+          <FormLabel>
           <Typography variant="h9" gutterBottom>
             Playing Career (Previous)
           </Typography>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField
-            label="Team, Club, Institution Name"
-            size="small"
-            fullWidth
-            required
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <InputLabel required>Organisation Type</InputLabel>
+          </FormLabel>
+      
+         
+          <TextField label="Team/Club/Institution Name" fullWidth
+          name="team-club-institution-name-previous"/>
+       
+       <FormLabel>
+          <Typography variant="h9" gutterBottom>
+            Organisation Type
+          </Typography>
+          </FormLabel>
           <Select
-            labelId="organisation-type-label"
-            id="organisation-type"
-            size="small"
-            fullWidth
+           name="organisation-type-previous"
+           labelId="organisation-type-previous-label"
+           id="organisation-type-previous"
+           size="small"
+           fullWidth
+           defaultValue="" 
           >
             <MenuItem value="Team">Team</MenuItem>
             <MenuItem value="Club">Club</MenuItem>
             <MenuItem value="Institution">Institution</MenuItem>
           </Select>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <InputLabel required>Played From (Month)</InputLabel>
+       
+          <FormLabel>
+          <Typography variant="h9" gutterBottom>
+            Played From (Month)
+          </Typography>
+          </FormLabel>
           <Select
-            labelId="played-from-month-label"
-            id="played-from-month"
+          name="played-from-month-previous"
+            labelId="played-from-month-previous-label"
+            id="played-from-month-previous"
             size="small"
             fullWidth
+            defaultValue="" 
           >
             {months.map((month) => (
               <MenuItem value={month} key={month}>
@@ -223,14 +300,19 @@ const PlayingCareerTab = () => {
               </MenuItem>
             ))}
           </Select>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <InputLabel required>Played From (Year)</InputLabel>
+    
+          <FormLabel>
+          <Typography variant="h9" gutterBottom>
+            Played From (Year)
+          </Typography>
+          </FormLabel>
           <Select
-            labelId="played-from-year-label"
-            id="played-from-year"
+          name="played-from-year-previous"
+            labelId="played-from-year-previous-label"
+            id="played-from-year-previous"
             size="small"
             fullWidth
+            defaultValue="" 
           >
             {listOfYears.map((year) => (
               <MenuItem value={year} key={year}>
@@ -238,20 +320,21 @@ const PlayingCareerTab = () => {
               </MenuItem>
             ))}
           </Select>
-        </Grid>
-        <Grid item xs={12}>
-          <TextField label="Address Line" fullWidth required />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField label="City/Town/Village" fullWidth required />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <InputLabel required>Assam District</InputLabel>
+     
+          <TextField label="Address Line" fullWidth
+          name="address-previous"/>
+      
+          <TextField label="City/Town/Village" fullWidth 
+          name="city-town-village-previous" />
+      
+          <InputLabel >Assam District</InputLabel>
           <Select
-            labelId="assam-district-label"
-            id="assam-district"
+          name="assam-district-previous"
+            labelId="assam-district-previous-label"
+            id="assam-district-previous"
             size="small"
             fullWidth
+            defaultValue="" 
           >
             {assamDistricts.map((district) => (
               <MenuItem value={district} key={district}>
@@ -259,46 +342,67 @@ const PlayingCareerTab = () => {
               </MenuItem>
             ))}
           </Select>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <InputLabel required>State</InputLabel>
-          <Select labelId="state-label" id="state" size="small" fullWidth>
+   
+          <FormLabel>
+          <Typography variant="h9" gutterBottom>
+            State
+          </Typography>
+          </FormLabel>
+          <Select 
+          name="state-previous"
+          labelId="state-previous-label" 
+          id="state-previous" 
+          size="small" 
+          fullWidth
+          defaultValue="" 
+          >
             {statesData.map((state) => (
               <MenuItem value={state} key={state}>
                 {state}
               </MenuItem>
             ))}
           </Select>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <InputLabel required>Country</InputLabel>
-          <Select labelId="country-label" id="country" size="small" fullWidth>
+       
+          <FormLabel>
+          <Typography variant="h9" gutterBottom>
+            Country
+          </Typography>
+          </FormLabel>
+          <Select 
+          name="country-previous"
+          labelId="country-previous-label" 
+          id="country-previous" 
+          size="small" 
+          fullWidth
+          defaultValue="" 
+          >
             {countries.map((country) => (
               <MenuItem value={country} key={country}>
                 {country}
               </MenuItem>
             ))}
           </Select>
-        </Grid>
-        <Grid item xs={12}>
-          <TextField label="Contact Number" fullWidth required />
-        </Grid>
-        <Grid item xs={12}>
-          <TextField label="Club/Team/Player Profile URL" fullWidth />
-        </Grid>
-        <Grid item xs={12} sm={7}>
-          <Button variant="outlined" size="small">
-            Add New
-          </Button>
-        </Grid>
-        <Grid item xs={12} sm={7}>
-          <Button variant="outlined" size="small">
+     
+          <TextField label="Contact Number" fullWidth 
+          name="contact-number-previous" />
+     
+          <TextField label="Club/Team/Player Profile URL" fullWidth
+          name="club-team-player-profile-url-previous" />
+  
+          <button className="p-2 w-[10rem] h-10 mt-2 bg-emerald-500 text-white rounded-md ">
+        Add More
+      </button>
+        
+          <button 
+          type="submit"
+          className="p-2 w-1/4 h-10 mt-20 bg-emerald-500 text-white rounded-md"
+          size="small">
             Submit
-          </Button>
-        </Grid>
-      </Grid>
-    </div>
+          </button>
+      
+    </Box>
   );
 };
+
 
 export default PlayingCareerTab;
