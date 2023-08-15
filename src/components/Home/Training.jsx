@@ -1,22 +1,36 @@
-import CoachesCard from "../UI/Cards/CoachesCard";
+import AthleteCard from "../UI/Cards/AthleteCard";
+// import { Link } from "react-router-dom";        
 
-const CoachesSection = () => {
+const DUMMY_CLUBS = [
+  { id: 600, name: "Club A" },
+  { id: 601, name: "Club B" },
+  { id: 602, name: "Club C" },
+];
+
+const Training = () => {
   return (
     <section className="my-16">
       <div className="flex-wrap text-center top-0 py-4">
         <h1 className="mb-10 text-xl font-bold leading-none tracking-tight text-gray-800 md:text-4xl lg:text-5xl dark:text-white-0">
-          Coaches
+        Training Institutes & Professional Clubs
         </h1>
         <p className="mb-2 text-lg font-normal text-gray-600 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-        Here, we shine a spotlight on the brilliant minds behind successful teams and athletes. From strategic masterminds to motivational Gurus, we bring you the profiles of top-notch coaches who have made a significant impact in their respective sports.
-
-Get ready to learn from the best!
+        We bring you a comprehensive directory of esteemed institutions and
+        clubs from around the world. Discover the training facilities, coaching
+        programs, and opportunities they offer to aspiring athletes. Whether
+        you’re a beginner or a seasoned player, our listings will guide you
+        toward the perfect environment to nurture your sports skills and
+        passion.
         </p>
+   
 
         <div className=" grid grid-cols-3 gap-6">
-          <CoachesCard />
-          <CoachesCard />
-          <CoachesCard />
+         
+          {DUMMY_CLUBS.map((athlete) => (
+            // <Link to={`/athletes/${athlete.id}`} >
+              <AthleteCard name={athlete.name} key={athlete.id} />
+            // </Link>
+          ))}
         </div>
         <div className="my-14">
           <a
@@ -46,4 +60,4 @@ Get ready to learn from the best!
   );
 };
 
-export default CoachesSection;
+export default Training;
