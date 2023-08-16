@@ -4,6 +4,9 @@ import HeroMain from "../components/Home/HeroMain";
 import HeroFooter from "../components/Home/HeroFooter";
 import AthleteSection from "../components/Home/AthleteSection";
 import CoachesSection from "../components/Home/CoachesSection";
+import Mentors from "../components/Home/Mentors";
+import Training from "../components/Home/Training";
+import SportsOfficial from "../components/Home/SportsOfficial";
 import NewsAndUpdateSection from "../components/Home/NewsAndUpdateSection";
 import Main from "../components/Layout/Main";
 import classes from "../components/Layout/Layout.module.css";
@@ -21,6 +24,9 @@ const HomePage = () => {
       <Main className={`${classes["header-container"]}`}>
         <AthleteSection />
         <CoachesSection />
+        <Mentors />
+        <Training />
+        <SportsOfficial />
         <NewsAndUpdateSection />
       </Main>
     </>
