@@ -102,7 +102,6 @@ function MUIVerticalTabs(props) {
           component={Link}
         />
         <Tab
-          className="w-[171px]"
           label="Achievements and Certificates"
           {...a11yProps(9)}
           to="achievements-and-certificates"
