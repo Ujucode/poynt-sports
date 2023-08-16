@@ -1,5 +1,4 @@
 import {
-  FormControl,
   FormLabel,
   Typography,
   Box,
@@ -65,7 +64,7 @@ const CreateEventTab = () => {
   };
 
   return (
-    <FormControl
+    <Box
       className="w-full flex flex-col gap-2 "
       component={"form"}
       onSubmit={handleSubmit}
@@ -218,7 +217,7 @@ const CreateEventTab = () => {
       >
         Create Event
       </button>
-    </FormControl>
+    </Box>
   );
 };
 
