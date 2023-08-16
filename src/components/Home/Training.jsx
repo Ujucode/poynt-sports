@@ -12,7 +12,7 @@ const Training = () => {
     <section className="my-16">
       <div className="flex-wrap text-center top-0 py-4">
         <h1 className="mb-10 text-xl font-bold leading-none tracking-tight text-gray-800 md:text-4xl lg:text-5xl dark:text-white-0">
-          Training Institutes & Professional Clubs
+          Training Institutes & Clubs
         </h1>
         <p className="mb-2 text-lg font-normal text-gray-600 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
           We bring you a comprehensive directory of esteemed institutions and
