@@ -17,9 +17,9 @@ import "react-quill/dist/quill.snow.css"; // Import the styles
 
 const CreateEventTab = () => {
   const [content, setContent] = useState("");
-  const [startDate, setStartDate] = useState();
+  const [startDateTime, setStartDateTime] = useState();
   const [image, setImage] = useState();
-  const [endDate, setEndDate] = useState();
+  const [endDateTime, setEndDateTime] = useState();
   const uploadRef = useRef();
 
   const handleEditorChange = (newContent) => {
@@ -53,8 +53,8 @@ const CreateEventTab = () => {
       address: data.get("address"),
       state: data.get("state"),
       city: data.get("city"),
-      "start-date-time-picker": new Date(startDate).toLocaleString(),
-      "end-date-time-picker": new Date(endDate).toLocaleString(),
+      "start-date-time-picker": new Date(startDateTime).toLocaleString(),
+      "end-date-time-picker": new Date(endDateTime).toLocaleString(),
       "all-day-event": data.get("all-day-event"),
       "hide-event-time": data.get("hide-event-time"),
       "hide-event-end-time": data.get("hide-event-end-time"),
@@ -80,7 +80,7 @@ const CreateEventTab = () => {
           Event Title
         </Typography>
       </FormLabel>
-      <TextField id="event-title" name="event-title" />
+      <TextField id="event-title" name="event-title" label="Event Title" />
 
       <FormLabel sx={{ mt: "2rem", minHeight: "auto" }}>
         <Typography variant="h5" gutterBottom>
@@ -115,16 +115,16 @@ const CreateEventTab = () => {
           id="start-date-time-picker"
           label="Start Date And Time"
           ampm
-          value={startDate}
-          onChange={(e) => setStartDate(e)}
+          value={startDateTime}
+          onChange={(e) => setStartDateTime(e)}
         />
         <MobileDateTimePicker
           name="end-date-time-picker"
           id="end-date-time-picker"
           label="End Date And Time"
           ampm
-          value={endDate}
-          onChange={(e) => setEndDate(e)}
+          value={endDateTime}
+          onChange={(e) => setEndDateTime(e)}
         />
       </Box>
 
