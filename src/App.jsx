@@ -18,6 +18,10 @@ import PostsTab from "./components/Account/PostsTab";
 import PlayingCareerTab from "./components/Account/PlayingCareerTab";
 import EducationTab from "./components/Account/EducationTab";
 import NewsAndUpdatesPage from "./routes/NewsAndUpdatesPage";
+import AchieveCertificate from "./components/Account/AchieveCertificate";
+import Participation from "./components/Account/Participation";
+import BankAccount from "./components/Account/BankAccount";
+import Sponsorship from "./components/Account/Sponsorship";
 
 function App() {
   const router = createBrowserRouter([
@@ -56,6 +60,10 @@ function App() {
             { path: "playing-career", element: <PlayingCareerTab /> },
             { path: "education", element: <EducationTab /> },
             { path: "posts", element: <PostsTab /> },
+            { path: "achievements-and-certificates", element: <AchieveCertificate /> },
+            { path: "participations", element: <Participation /> },
+            { path: "bank-account", element: <BankAccount /> },
+            { path: "sponsorship", element: <Sponsorship /> },
           ],
         },
         {
