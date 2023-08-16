@@ -14,6 +14,11 @@ function TabPanel(props) {
       id={`vertical-tabpanel-${index}`}
       aria-labelledby={`vertical-tab-${index}`}
       {...other}
+      style={{
+        borderLeft: "1px solid lightGray",
+        borderRight: "1px solid lightGray",
+        borderTop: "1px solid lightGray",
+      }}
       className=""
     >
       {value === index && <Box className="p-6 w-[1030px]">{children}</Box>}
@@ -44,6 +49,7 @@ function MUIVerticalTabs(props) {
       }}
     >
       <Tabs
+        className="h-min bg-gray-200 "
         orientation="vertical"
         variant="fullWidth"
         value={value}
@@ -51,83 +57,83 @@ function MUIVerticalTabs(props) {
         aria-label="Vertical tabs example"
         sx={{ borderRight: 1, borderColor: "divider" }}
       >
-        <Tab label="Edit Profile" {...a11yProps(0)} to="" component={Link} />
-        <Tab
+        <Tab label="User Profile" {...a11yProps(0)} to="" component={Link} />
+        {/* <Tab
           label="Add Skills"
           {...a11yProps(1)}
           to="add-skills"
           component={Link}
-        />
+        /> */}
         <Tab
           label="Education"
-          {...a11yProps(2)}
+          {...a11yProps(1)}
           to="education"
           component={Link}
         />
         <Tab
           label="Playing Career"
-          {...a11yProps(3)}
+          {...a11yProps(2)}
           to="playing-career"
           component={Link}
         />
         <Tab
           label="My Supports"
-          {...a11yProps(4)}
+          {...a11yProps(3)}
           to="supports"
           component={Link}
         />
         <Tab
           label="Events Attended"
-          {...a11yProps(5)}
+          {...a11yProps(4)}
           to="events-attended"
           component={Link}
         />
         <Tab
           label="Create Event"
-          {...a11yProps(6)}
+          {...a11yProps(5)}
           to="create-event"
           component={Link}
         />
         <Tab
           label="Event Details"
-          {...a11yProps(7)}
+          {...a11yProps(6)}
           to="event-details"
           component={Link}
         />
 
         <Tab
           label="Calender"
-          {...a11yProps(8)}
+          {...a11yProps(7)}
           to="calender"
           component={Link}
         />
         <Tab
           label="Achievements and Certificates"
-          {...a11yProps(9)}
+          {...a11yProps(8)}
           to="achievements-and-certificates"
           component={Link}
         />
         <Tab
           label="Participations"
-          {...a11yProps(10)}
+          {...a11yProps(9)}
           to="participations"
           component={Link}
         />
         <Tab
           label="Bank Details"
-          {...a11yProps(11)}
+          {...a11yProps(10)}
           to="bank-account"
           component={Link}
         />
         <Tab
           label="Sponsorship Details"
-          {...a11yProps(12)}
+          {...a11yProps(11)}
           to="sponsorship"
           component={Link}
         />
-        <Tab label="Posts" {...a11yProps(13)} to="posts" component={Link} />
+        <Tab label="Posts" {...a11yProps(12)} to="posts" component={Link} />
       </Tabs>
-      {Array.from(Array(14)).map((_, index) => (
+      {Array.from(Array(13)).map((_, index) => (
         <TabPanel key={index} value={value} index={index}>
           {props.children}
         </TabPanel>
