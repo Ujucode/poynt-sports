@@ -60,7 +60,10 @@ function App() {
             { path: "playing-career", element: <PlayingCareerTab /> },
             { path: "education", element: <EducationTab /> },
             { path: "posts", element: <PostsTab /> },
-            { path: "achievements-and-certificates", element: <AchieveCertificate /> },
+            {
+              path: "achievements-and-certificates",
+              element: <AchieveCertificate />,
+            },
             { path: "participations", element: <Participation /> },
             { path: "bank-account", element: <BankAccount /> },
             { path: "sponsorship", element: <Sponsorship /> },
