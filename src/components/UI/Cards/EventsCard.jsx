@@ -1,18 +1,60 @@
-const EventsCard = ({ title, description, image }) => {
+import { MobileDatePicker } from "@mui/x-date-pickers";
+import { Paper, Typography, Box } from "@mui/material";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import BookmarkIcon from "@mui/icons-material/Bookmark";
+import BookmarkAddedIcon from "@mui/icons-material/BookmarkAdded";
+import { useState } from "react";
+
+const EventsCard = ({ title, description, image, venue }) => {
+  const [clicked, setClicked] = useState(true);
+  const handleClick = (e) => {
+    setClicked(!clicked);
+  };
   return (
-    <div className="max-w-2xl mx-auto bg-white rounded-lg overflow-hidden shadow-md mb-4 flex flex-col">
-      <div className="flex-shrink-0">
+    <Paper elevation={5} className="rounded-md h-[23rem] flex flex-col">
+      <Box className="h-3/6 ">
         <img
           src={image}
-          alt="Card"
-          className="w-full h-[screen] object-cover object-center"
+          alt="event"
+          className="rounded-t-md block object-cover  mx-auto w-full h-full"
         />
-      </div>
-      <div className="p-4 flex-1">
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600">{description}</p>
-      </div>
-    </div>
+      </Box>
+
+      <Box className="px-2 flex items-center  ">
+        <Typography
+          variant="h4"
+          className=" text-center text-gray-900/80 font-bold p-2 grow"
+          wrap="true"
+        >
+          {title}
+        </Typography>
+        <Box className=" text-gray-900/70 w-min " onClick={handleClick}>
+          {clicked ? (
+            <BookmarkIcon fontSize="large" />
+          ) : (
+            <BookmarkAddedIcon fontSize="large" />
+          )}
+        </Box>
+      </Box>
+
+      <Box className="h-2/6 px-4 flex  gap-5 ">
+        <Typography
+          variant="h5"
+          className="w-1/6 text-center text-emerald-600 font-bold p-2  "
+          wrap="true"
+        >
+          Mar, 27
+        </Typography>
+        <Box className="grow p-2 ">
+          <Typography variant="h5" className="text-gray-900/80 font-bold">
+            Venue
+          </Typography>
+          <Typography variant="body2" className=" text-gray-900/70   ">
+            <LocationOnIcon /> {venue}
+          </Typography>
+        </Box>
+      </Box>
+    </Paper>
   );
 };
 
