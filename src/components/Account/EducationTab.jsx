@@ -83,19 +83,9 @@ export default function EducationTab() {
           label="Start Date"
           name="start-date"
           id="start-date"
-          ampm
-          // value={startDate}
-          // onChange={(e) => setStartDate(e)}
         />
 
-        <MobileDatePicker
-          label="End Date"
-          name="end-date"
-          id="end-date"
-          ampm
-          // value={startDate}
-          // onChange={(e) => setStartDate(e)}
-        />
+        <MobileDatePicker label="End Date" name="end-date" id="end-date" />
       </Box>
 
       <FormLabel className="mt-5">
