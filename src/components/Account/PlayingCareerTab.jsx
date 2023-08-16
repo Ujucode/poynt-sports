@@ -49,12 +49,6 @@ const PlayingCareerTab = () => {
       onSubmit={handleFormSubmit}
     >
       <FormLabel>
-        <Typography variant="h3" gutterBottom>
-          PLAYING CAREER
-        </Typography>
-      </FormLabel>
-
-      <FormLabel>
         <Typography variant="h6" gutterBottom>
           Played upto level
         </Typography>
