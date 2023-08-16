@@ -1,7 +1,7 @@
 import AthleteCard from "../UI/Cards/AthleteCard";
-// import { Link } from "react-router-dom";        
+// import { Link } from "react-router-dom";
 
-const DUMMY_Officials= [
+const DUMMY_Officials = [
   { id: 700, name: "Official A" },
   { id: 701, name: "Official B" },
   { id: 702, name: "Official C" },
@@ -22,35 +22,34 @@ function SportsOfficial() {
       </p>
 
       <div className=" grid grid-cols-3 gap-6">
-         
-         {DUMMY_Officials.map((athlete) => (
-           // <Link to={`/athletes/${athlete.id}`} >
-             <AthleteCard name={athlete.name} key={athlete.id} />
-           // </Link>
-         ))}
-       </div>
+        {DUMMY_Officials.map((athlete) => (
+          // <Link to={`/athletes/${athlete.id}`} >
+          <AthleteCard name={athlete.name} key={athlete.id} />
+          // </Link>
+        ))}
+      </div>
       <div className="my-14">
-      <a
-        href="/some/link/here"
-        className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900"
-      >
-        See more
-        <svg
-          className="w-3.5 h-3.5 ml-2"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 14 10"
+        <a
+          href="/some/link/here"
+          className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900"
         >
-          <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M1 5h12m0 0L9 1m4 4L9 9"
-          />
-        </svg>
-      </a>
+          See more
+          <svg
+            className="w-3.5 h-3.5 ml-2"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 10"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"
+            />
+          </svg>
+        </a>
       </div>
     </div>
   );

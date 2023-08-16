@@ -8,9 +8,11 @@ const CoachesSection = () => {
           Coaches
         </h1>
         <p className="mb-2 text-lg font-normal text-gray-600 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-        Here, we shine a spotlight on the brilliant minds behind successful teams and athletes. From strategic masterminds to motivational Gurus, we bring you the profiles of top-notch coaches who have made a significant impact in their respective sports.
-
-Get ready to learn from the best!
+          Here, we shine a spotlight on the brilliant minds behind successful
+          teams and athletes. From strategic masterminds to motivational Gurus,
+          we bring you the profiles of top-notch coaches who have made a
+          significant impact in their respective sports. Get ready to learn from
+          the best!
         </p>
 
         <div className=" grid grid-cols-3 gap-6">

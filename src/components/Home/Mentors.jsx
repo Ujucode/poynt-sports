@@ -1,5 +1,5 @@
 import AthleteCard from "../UI/Cards/AthleteCard";
-// import { Link } from "react-router-dom";        
+// import { Link } from "react-router-dom";
 
 const DUMMY_MENTORS = [
   { id: 500, name: "Mentor 1" },
@@ -15,21 +15,19 @@ const Mentors = () => {
           Mentors & Ex-athletes
         </h1>
         <p className="mb-2 text-lg font-normal text-gray-600 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-        Explore the stories of legendary ex-athletes turned mentors. These icons
-        of the sporting world have left an indelible mark on their respective
-        disciplines. From record-breaking achievements to unforgettable moments,
-        we delve into the journeys and experiences of these exceptional
-        individuals who have transitioned from athletes to inspiring figures in
-        the sports landscape. Get mentorship from the ones who have reached
-        where you want to be.
+          Explore the stories of legendary ex-athletes turned mentors. These
+          icons of the sporting world have left an indelible mark on their
+          respective disciplines. From record-breaking achievements to
+          unforgettable moments, we delve into the journeys and experiences of
+          these exceptional individuals who have transitioned from athletes to
+          inspiring figures in the sports landscape. Get mentorship from the
+          ones who have reached where you want to be.
         </p>
-   
 
         <div className=" grid grid-cols-3 gap-6">
-         
           {DUMMY_MENTORS.map((athlete) => (
             // <Link to={`/athletes/${athlete.id}`} >
-              <AthleteCard name={athlete.name} key={athlete.id} />
+            <AthleteCard name={athlete.name} key={athlete.id} />
             // </Link>
           ))}
         </div>

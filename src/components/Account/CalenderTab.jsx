@@ -64,7 +64,9 @@ const CalendarTab = () => {
         </div>
         {activeTab === "upcoming" ? (
           <div>
-            <h2 className="text-2xl font-bold mt-8">{upcomingAppointments.length} Upcoming Appointments</h2>
+            <h2 className="text-2xl font-bold mt-8">
+              {upcomingAppointments.length} Upcoming Appointments
+            </h2>
             {upcomingAppointments.map((appointment) => (
               <div key={appointment.id}>
                 <hr className="my-4 border-t border-gray-300" />
@@ -76,7 +78,13 @@ const CalendarTab = () => {
                   <AccessTime />
                   <span className="ml-2">Booking: {appointment.booking}</span>
                 </div>
-                <button className={`px-4 py-2 rounded mt-4 ${appointment.status === "Accepted" ? "bg-green-500" : "bg-gray-300"}`}>
+                <button
+                  className={`px-4 py-2 rounded mt-4 ${
+                    appointment.status === "Accepted"
+                      ? "bg-green-500"
+                      : "bg-gray-300"
+                  }`}
+                >
                   {appointment.status}
                 </button>
               </div>
@@ -94,15 +102,21 @@ const CalendarTab = () => {
                     <hr className="my-4 border-t border-gray-300" />
                     <div className="flex items-center mt-4">
                       <CalendarToday />
-                      <span className="ml-2">Calendar: {appointment.calendar}</span>
+                      <span className="ml-2">
+                        Calendar: {appointment.calendar}
+                      </span>
                     </div>
                     <div className="flex items-center mt-2">
                       <AccessTime />
-                      <span className="ml-2">Booking: {appointment.booking}</span>
+                      <span className="ml-2">
+                        Booking: {appointment.booking}
+                      </span>
                     </div>
                     <button
                       className={`px-4 py-2 rounded mt-4 ${
-                        appointment.status === "Accepted" ? "bg-green-500" : "bg-gray-300"
+                        appointment.status === "Accepted"
+                          ? "bg-green-500"
+                          : "bg-gray-300"
                       }`}
                     >
                       {appointment.status}

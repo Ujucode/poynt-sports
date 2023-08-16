@@ -1,6 +1,13 @@
-import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
-import { Select, InputLabel, MenuItem, Button, TextField, Box } from '@mui/material';
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+import {
+  Select,
+  InputLabel,
+  MenuItem,
+  Button,
+  TextField,
+  Box,
+} from "@mui/material";
 import { state as statesData, played_upto } from "../../data/data";
 
 const Participation = () => {
@@ -8,11 +15,26 @@ const Participation = () => {
   const listOfYears = Array.from({ length: 30 }, (_, i) => getCurrentYear - i);
 
   const months = [
-    'January', 'February', 'March', 'April', 'May', 'June',
-    'July', 'August', 'September', 'October', 'November', 'December'
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
   ];
 
-  const event_type=['Single Match', 'League Tournament', 'Knockout Tournament', 'Mixed Tournament'];
+  const event_type = [
+    "Single Match",
+    "League Tournament",
+    "Knockout Tournament",
+    "Mixed Tournament",
+  ];
 
   return (
     <Box>
@@ -20,10 +42,15 @@ const Participation = () => {
         Achievements & Certifications
       </Typography>
       <Grid container spacing={4}>
-      <Grid item xs={7}>
-          <TextField label="Event/Certificate Name" size='small' fullWidth required />
+        <Grid item xs={7}>
+          <TextField
+            label="Event/Certificate Name"
+            size="small"
+            fullWidth
+            required
+          />
         </Grid>
-       
+
         <Grid item xs={7}>
           <InputLabel required>Event Type</InputLabel>
           <Select labelId="event_type" id="event" size="small" fullWidth>
@@ -37,7 +64,12 @@ const Participation = () => {
 
         <Grid item xs={7}>
           <InputLabel required>Level</InputLabel>
-          <Select labelId="played-upto-label" id="played-upto" size="small" fullWidth>
+          <Select
+            labelId="played-upto-label"
+            id="played-upto"
+            size="small"
+            fullWidth
+          >
             {played_upto.map((level) => (
               <MenuItem value={level} key={level}>
                 {level}
@@ -46,11 +78,16 @@ const Participation = () => {
           </Select>
         </Grid>
         <Grid item xs={7}>
-          <TextField label="Organised By" size='small' fullWidth required />
+          <TextField label="Organised By" size="small" fullWidth required />
         </Grid>
         <Grid item xs={12} sm={6}>
           <InputLabel required>Organised On (Month)</InputLabel>
-          <Select labelId="played-from-month-label" id="played-from-month" size="small" fullWidth>
+          <Select
+            labelId="played-from-month-label"
+            id="played-from-month"
+            size="small"
+            fullWidth
+          >
             {months.map((month) => (
               <MenuItem value={month} key={month}>
                 {month}
@@ -59,10 +96,14 @@ const Participation = () => {
           </Select>
         </Grid>
 
-        
         <Grid item xs={7}>
           <InputLabel required>Year</InputLabel>
-          <Select labelId="demo-simple-select-label" id="demo-simple-select" size="small" fullWidth>
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            size="small"
+            fullWidth
+          >
             {listOfYears.map((year) => (
               <MenuItem value={year} key={year}>
                 {year}
@@ -76,7 +117,6 @@ const Participation = () => {
             {statesData.map((state) => (
               <MenuItem value={state} key={state}>
                 {state}
-                
               </MenuItem>
             ))}
           </Select>
@@ -104,7 +144,7 @@ const Participation = () => {
           </Button>
         </Grid>
       </Grid>
-      </Box>
+    </Box>
   );
 };
 
