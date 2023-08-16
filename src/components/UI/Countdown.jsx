@@ -1,15 +1,15 @@
-import { useState, useRef, useEffect, useCallback } from 'react';
+import { useState, useRef, useEffect, useCallback } from "react";
 
 const Countdown = () => {
-  const [timer, setTimer] = useState('12:05:10');
+  const [timer, setTimer] = useState("12:05:10");
   const intervalRef = useRef(null);
 
   const updateTimer = useCallback(() => {
     setTimer((prevTimer) => {
-      const [hours, minutes, seconds] = prevTimer.split(':').map(Number);
+      const [hours, minutes, seconds] = prevTimer.split(":").map(Number);
       if (hours === 0 && minutes === 0 && seconds === 0) {
         clearInterval(intervalRef.current);
-        return '00:00:00';
+        return "00:00:00";
       }
 
       let newHours = hours;
@@ -25,7 +25,9 @@ const Countdown = () => {
         newHours -= 1;
       }
 
-      return `${formatTime(newHours)}:${formatTime(newMinutes)}:${formatTime(newSeconds)}`;
+      return `${formatTime(newHours)}:${formatTime(newMinutes)}:${formatTime(
+        newSeconds,
+      )}`;
     });
   }, []);
 
@@ -37,12 +39,12 @@ const Countdown = () => {
   }, [updateTimer]);
 
   const formatTime = (value) => {
-    return value.toString().padStart(2, '0');
+    return value.toString().padStart(2, "0");
   };
 
   const onClickReset = () => {
     clearInterval(intervalRef.current);
-    setTimer('12:05:10');
+    setTimer("12:05:10");
     startTimer();
   };
 
@@ -57,15 +59,14 @@ const Countdown = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <h1 className="text-2xl font-bold mb-4">Event Timer</h1>
 
-        <h2 className="text-3xl font-bold mb-4">{timer}</h2>
-        <button
-          className="px-4 py-2 bg-green-500 text-white rounded-md shadow-md hover:bg-green-600"
-          onClick={onClickReset}
-        >
-          Reset
-        </button>
-      </div>
-    
+      <h2 className="text-3xl font-bold mb-4">{timer}</h2>
+      <button
+        className="px-4 py-2 bg-green-500 text-white rounded-md shadow-md hover:bg-green-600"
+        onClick={onClickReset}
+      >
+        Reset
+      </button>
+    </div>
   );
 };
 

@@ -1,9 +1,7 @@
 import { Box } from "@mui/material";
 import EventsAttendedCard from "../UI/Cards/EventsAttendedCard";
 
-const randomNames = [
-  "Event 1", "Event 2", "Event 3", "Event 4", 
-];
+const randomNames = ["Event 1", "Event 2", "Event 3", "Event 4"];
 
 const EventsAttended = () => {
   return (

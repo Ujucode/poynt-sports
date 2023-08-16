@@ -1,27 +1,28 @@
 import { Box } from "@mui/material";
-import Countdown from "../UI/Countdown"
-import { CalendarToday, AccessTime,Folder, LocationOn } from "@mui/icons-material";
+import Countdown from "../UI/Countdown";
+import {
+  CalendarToday,
+  AccessTime,
+  Folder,
+  LocationOn,
+} from "@mui/icons-material";
 const EventDetailTab = () => {
-  return(
-  <Box>
-           <div className="flex gap-3 items-center mb-2"> 
+  return (
+    <Box>
+      <div className="flex gap-3 items-center mb-2">
         <CalendarToday />
-        <span >Date: 28/8/23</span>
+        <span>Date: 28/8/23</span>
         <AccessTime />
-        <span >Time: 21:40-22:40</span>
+        <span>Time: 21:40-22:40</span>
         <Folder />
-        <span >Category: Training Camp</span>
+        <span>Category: Training Camp</span>
         <LocationOn />
-        <span >Location: Guwahati</span>
-      </div> 
+        <span>Location: Guwahati</span>
+      </div>
 
-    <Countdown/>
-  
-    
-
-  </Box>
-  )
-
+      <Countdown />
+    </Box>
+  );
 };
 
 export default EventDetailTab;
