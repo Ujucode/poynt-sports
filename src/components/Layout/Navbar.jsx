@@ -6,7 +6,7 @@ import classes from "../Layout/Layout.module.css";
 const Navbar = () => {
   return (
     <nav
-      className={`flex justify-between items-center text-3xl text-gray-50 p-4 font-bold ${classes["header-container"]} bg-transparent]`}
+      className={`flex justify-between items-center h-32 text-3xl text-gray-50 p-4 font-bold ${classes["header-container"]} bg-transparent]`}
     >
       <div>
         <Link to="/">
