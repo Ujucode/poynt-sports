@@ -16,11 +16,11 @@
     "@emotion/styled": "11.11.0",
     "@mui/icons-material": "5.14.0",
     "@mui/material": "5.14.1",
-    "@mui/x-date-pickers": "^6.11.0",
-    "dayjs": "^1.11.9",
+    "@mui/x-date-pickers": "6.11.0",
+    "dayjs": "1.11.9",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-quill": "^2.0.0",
+    "react-quill": "2.0.0",
     "react-router-dom": "6.14.1"
   },
   "devDependencies": {
