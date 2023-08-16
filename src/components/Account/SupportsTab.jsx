@@ -11,9 +11,9 @@ const randomNames = [
 
 const SupportsTab = () => {
   return (
-    <Box className="grid grid-cols-3 gap-5 ">
+    <Box className="grid grid-cols-3 gap-10 ">
       {randomNames.map((name, index) => (
-        <AthleteCard key={index} name={name} />
+        <AthleteCard className="" key={index} name={name} />
       ))}
     </Box>
   );
