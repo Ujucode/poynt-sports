@@ -173,7 +173,7 @@ const PostsTab = () => {
         className="p-2 w-40 bg-emerald-500 text-white rounded-md h-10"
         onClick={handleUpload}
       >
-        {image ? "Change Image" : "Upload Post Image"}
+        {image ? "Change Image" : "Upload Image"}
       </button>
       <FormLabel htmlFor="upload-img" required>
         Max size 5 MB
