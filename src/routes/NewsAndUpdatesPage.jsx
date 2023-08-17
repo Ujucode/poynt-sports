@@ -4,7 +4,6 @@ import Navbar from "../components/Layout/Navbar";
 import ArticleContent from "../components/Layout/ArticleContent";
 import LeaveAReply from "../components/Layout/LeaveAReply";
 import ArticleMain from "../components/Layout/ArticleMain";
-import classes from "../components/Layout/Layout.module.css";
 import Hero from "../components/Layout/Hero";
 import trophy from "../assets/trophy.jpg";
 
@@ -14,7 +13,7 @@ const NewsAndUpdatesPage = () => {
       <Header>
         <Navbar />
       </Header>
-      <Main className={`${classes["header-container"]}`}>
+      <Main className="">
         <Hero className="h-auto">
           <div className={` h-full `}>
             <img

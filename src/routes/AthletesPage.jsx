@@ -2,7 +2,6 @@ import Header from "../components/Layout/Header";
 import Navbar from "../components/Layout/Navbar";
 import Main from "../components/Layout/Main";
 import AthletesGallery from "../components/Athletes/AthletesGallery";
-import classes from "../components/Layout/Layout.module.css";
 
 const AthletesPage = () => {
   return (
@@ -10,7 +9,7 @@ const AthletesPage = () => {
       <Header>
         <Navbar />
       </Header>
-      <Main className={`${classes["header-container"]}`}>
+      <Main className="">
         <AthletesGallery />
       </Main>
     </>

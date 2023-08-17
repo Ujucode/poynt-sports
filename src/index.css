@@ -42,6 +42,12 @@
       rgb(172, 224, 217) 89.8%
     ); */
   }
+
+  main,
+  nav {
+    margin: 0 auto;
+    width: 1200px;
+  }
 }
 
 @layer components {
@@ -51,4 +57,25 @@
 
 .ql-editor {
   min-height: 10rem;
+}
+
+.hero {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(/src/assets/hero.svg);
+}
+
+.header-container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.event-overlay {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/174183675.jpg?k=79393dce82466d29c024af9cda164bfc4d99b1d9abafab632e44d9c7d1b069b7&o=&hp=1);
 }

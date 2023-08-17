@@ -1,7 +1,7 @@
 import Header from "../components/Layout/Header";
 import Main from "../components/Layout/Main";
 import Navbar from "../components/Layout/Navbar";
-import classes from "../components/Layout/Layout.module.css";
+
 import EventsGallery from "../components/Events/EventsGallery";
 
 const EventsPage = () => {
@@ -10,7 +10,7 @@ const EventsPage = () => {
       <Header>
         <Navbar />
       </Header>
-      <Main className={`${classes["header-container"]} `}>
+      <Main className="header-container">
         <EventsGallery />
       </Main>
     </>

@@ -1,7 +1,6 @@
 import Header from "../components/Layout/Header";
 import Main from "../components/Layout/Main";
 import Navbar from "../components/Layout/Navbar";
-import classes from "../components/Layout/Layout.module.css";
 
 const ContactPage = () => {
   return (
@@ -9,7 +8,7 @@ const ContactPage = () => {
       <Header>
         <Navbar />
       </Header>
-      <Main className={`${classes["header-container"]}`}>
+      <Main className="header-container">
         <h1 className="text-green-600 text-6xl text-center">
           This is contact page!
         </h1>

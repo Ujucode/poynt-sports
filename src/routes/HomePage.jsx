@@ -9,19 +9,18 @@ import Training from "../components/Home/Training";
 import SportsOfficial from "../components/Home/SportsOfficial";
 import NewsAndUpdateSection from "../components/Home/NewsAndUpdateSection";
 import Main from "../components/Layout/Main";
-import classes from "../components/Layout/Layout.module.css";
 
 const HomePage = () => {
   return (
     <>
       <Header
-        className={`h-screen ${classes.hero} bg-no-repeat bg-cover bg-fixed flex flex-col justify-between text-gray-50`}
+        className={`h-screen hero bg-no-repeat bg-cover bg-fixed flex flex-col justify-between text-gray-50`}
       >
         <Navbar />
         <HeroMain />
         <HeroFooter />
       </Header>
-      <Main className={`${classes["header-container"]}`}>
+      <Main className="">
         <AthleteSection />
         <CoachesSection />
         <Mentors />

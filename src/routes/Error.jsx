@@ -1,6 +1,5 @@
 import { useRouteError } from "react-router-dom";
 import Navbar from "../components/Layout/Navbar";
-import classes from "../components/Layout/Layout.module.css";
 import Header from "../components/Layout/Header";
 import Footer from "../components/Layout/Footer";
 import Main from "../components/Layout/Main";
@@ -12,9 +11,7 @@ const Error = () => {
       <Header>
         <Navbar />
       </Header>
-      <Main
-        className={`${classes["header-container"]} text-2xl text-azure-500 `}
-      >
+      <Main className={`text-2xl text-azure-500 `}>
         <h1>Oops!</h1>
         <p>Sorry, an unexpected error has occurred.</p>
         <p>
