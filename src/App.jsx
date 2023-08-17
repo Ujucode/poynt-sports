@@ -22,6 +22,8 @@ import AchieveCertificate from "./components/Account/AchieveCertificate";
 import Participation from "./components/Account/Participation";
 import BankAccount from "./components/Account/BankAccount";
 import Sponsorship from "./components/Account/Sponsorship";
+import TrainingInstitutesAndClubsPage from "./routes/TrainingInstitutesAndClubsPage";
+import VenuePage from "./routes/VenuePage";
 
 function App() {
   const router = createBrowserRouter([
@@ -72,6 +74,14 @@ function App() {
         {
           path: "news-and-updates",
           element: <NewsAndUpdatesPage />,
+        },
+        {
+          path: "training-institutes-clubs",
+          element: <TrainingInstitutesAndClubsPage />,
+        },
+        {
+          path: "venues",
+          element: <VenuePage />,
         },
       ],
     },

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import classes from "../Layout/Layout.module.css";
 
-const HeroFooter = () => {
+const HeroLinks = () => {
   return (
     <section>
       <div
@@ -9,22 +9,24 @@ const HeroFooter = () => {
       >
         <div className=" w-3/12 h-48 flex justify-center align-middle items-center flex-wrap p-8 text-center border-r-2 border-white">
           <p>
-            <Link>Events & Tournaments</Link>
+            <Link to="events">Events & Tournaments</Link>
           </p>
         </div>
         <div className=" w-3/12 h-48 flex justify-center align-middle items-center flex-wrap p-8 text-center border-r-2 border-white">
           <p>
-            <Link>Venue Booking</Link>
+            <Link to="venues">Venue Booking</Link>
           </p>
         </div>
         <div className=" w-3/12 h-48 flex justify-center align-middle items-center flex-wrap p-8 text-center border-r-2 border-white">
           <p>
-            <Link>Training Institutes & Clubs</Link>
+            <Link to="training-institutes-clubs">
+              Training Institutes & Clubs
+            </Link>
           </p>
         </div>
         <div className=" w-3/12 h-48 flex justify-center align-middle items-center flex-wrap p-8 text-center ">
           <p>
-            <Link>Create your Event</Link>
+            <Link to="/account/create-event">Create your Event</Link>
           </p>
         </div>
       </div>
@@ -32,4 +34,4 @@ const HeroFooter = () => {
   );
 };
 
-export default HeroFooter;
+export default HeroLinks;
