@@ -244,53 +244,6 @@ export default function EducationTab() {
         </Box>
       ))}
 
-      <FormLabel className="mt-5">
-        <Typography variant="h5" gutterBottom>
-          Field of Study
-        </Typography>
-      </FormLabel>
-
-      <TextField
-        type="text"
-        variant="outlined"
-        size="small"
-        label="Field Of Study"
-        fullWidth
-        autoComplete="given-name"
-      />
-
-      <FormLabel className="mt-5">
-        <Typography variant="h5" gutterBottom>
-          Duration
-        </Typography>
-      </FormLabel>
-
-      <Box className="flex gap-5">
-        <MobileDatePicker
-          label="Start Date"
-          name="start-date"
-          id="start-date"
-        />
-
-        <MobileDatePicker label="End Date" name="end-date" id="end-date" />
-      </Box>
-
-      <FormLabel className="mt-5">
-        <Typography variant="h5" gutterBottom>
-          Grade/Percentage
-        </Typography>
-      </FormLabel>
-
-      <TextField
-        required
-        type="text"
-        variant="outlined"
-        size="small"
-        label="Grade/Percentage"
-        fullWidth
-        autoComplete="given-name"
-      />
-
       <button
         type="button"
         className="p-2 w-[10rem] h-10 mt-2 bg-emerald-500 text-white rounded-md "
