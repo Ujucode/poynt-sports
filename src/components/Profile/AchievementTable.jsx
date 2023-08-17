@@ -95,8 +95,12 @@ const rows = [
 export default function AchieveTable() {
   return (
     <TableContainer component={Paper}>
-      <div className="text-center text-2xl font-bold pt-4 "> Achievements </div>
-      <Table sx={{ minWidth: 650 }} aria-label="Achievements">
+      <div className="text-center text-2xl font-bold pt-4"> Achievements </div>
+      <Table
+        sx={{ minWidth: 650 }}
+        aria-label="Achievements"
+        className="w-full"
+      >
         <TableHead>
           <TableRow>
             <TableCell>Position</TableCell>
@@ -108,12 +112,17 @@ export default function AchieveTable() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
+          {rows.map((row, index) => (
             <TableRow
-              key={row.name}
+              key={`${row.position}-${index}`} // Unique key with position and index
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+              className="block md:table-row" // Display as block on small screens, table-row on larger screens
             >
-              <TableCell component="th" scope="row">
+              <TableCell
+                component="th"
+                scope="row"
+                className="md:table-cell" // Display as table-cell on larger screens
+              >
                 {row.position}
               </TableCell>
               <TableCell align="right">{row.competiton}</TableCell>
