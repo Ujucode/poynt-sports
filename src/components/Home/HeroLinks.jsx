@@ -18,9 +18,7 @@ const HeroLinks = () => {
         </div>
         <div className=" w-3/12 h-48 flex justify-center align-middle items-center flex-wrap p-8 text-center border-r-2 border-white">
           <p>
-            <Link to="training-institutes-clubs">
-              Training Institutes & Clubs
-            </Link>
+            <Link to="institutes-and-clubs">Training Institutes & Clubs</Link>
           </p>
         </div>
         <div className=" w-3/12 h-48 flex justify-center align-middle items-center flex-wrap p-8 text-center ">

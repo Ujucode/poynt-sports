@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import AthleteCard from "../UI/Cards/AthleteCard";
+import EastIcon from "@mui/icons-material/East";
+import Button from "../UI/Button";
 
 const DUMMY_ATHLETES = [
   { id: 800, name: "Wayne Rooney" },
@@ -9,7 +11,7 @@ const DUMMY_ATHLETES = [
 
 const AthleteSection = () => {
   return (
-    <section className="my-16">
+    <section className="mt-10">
       <div className="flex-wrap text-center top-0 py-4">
         <h1 className="mb-10 text-xl font-bold leading-none tracking-tight text-gray-800 md:text-4xl lg:text-5xl dark:text-white-0">
           Athletes
@@ -29,27 +31,14 @@ const AthleteSection = () => {
             </Link>
           ))}
         </div>
-        <div className="my-14">
-          <Link
-            to="athletes"
-            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900"
-          >
-            See all
-            <svg
-              className="w-3.5 h-3.5 ml-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
-            </svg>
+        <div className="my-5">
+          <Link to="/athletes">
+            <Button>
+              See all
+              <span>
+                <EastIcon fontSize="small" className="ml-1" />
+              </span>
+            </Button>
           </Link>
         </div>
       </div>

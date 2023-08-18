@@ -6,13 +6,13 @@ import { Box } from "@mui/system";
 
 const EventsGallery = () => {
   return (
-    <section className="mb-10">
+    <section className="">
       <Paper
         elevation={5}
-        className="h-[15rem] bg-emerald-100 rounded-none flex items-center justify-center "
+        className="h-[15rem] bg-gradient-to-r from-violet-200 to-pink-200 rounded-none flex items-center justify-center "
       >
         <Typography
-          className="text-center font-bold bg-gradient-to-r from-slate-600 to-slate-400 bg-clip-text text-transparent"
+          className="text-center font-bold bg-gradient-to-r from-slate-800 to-slate-500 bg-clip-text text-transparent"
           variant="h3"
           gutterBottom
         >

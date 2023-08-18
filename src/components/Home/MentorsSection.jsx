@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 import CoachesCard from "../UI/Cards/CoachesCard";
 import EastIcon from "@mui/icons-material/East";
 import Button from "../UI/Button";
-const CoachesSection = () => {
+
+const MentorsSection = () => {
   return (
     <section className="">
       <div className="flex-wrap text-center top-0 py-4">
         <h1 className="mb-10 text-xl font-bold leading-none tracking-tight text-gray-800 md:text-4xl lg:text-5xl dark:text-white-0">
-          Coaches
+          Mentors
         </h1>
         <p className="mb-2 text-lg font-normal text-gray-600 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
           Here, we shine a spotlight on the brilliant minds behind successful
@@ -23,7 +24,7 @@ const CoachesSection = () => {
           ))}
         </div>
         <div className="my-5">
-          <Link to="/coaches">
+          <Link to="/mentors">
             <Button>
               See all
               <span>
@@ -37,4 +38,4 @@ const CoachesSection = () => {
   );
 };
 
-export default CoachesSection;
+export default MentorsSection;

@@ -2,11 +2,18 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Root from "./routes/Root";
 import Error from "./routes/Error";
 import HomePage from "./routes/HomePage";
+import VenuePage from "./routes/VenuePage";
 import EventsPage from "./routes/EventsPage";
 import ContactPage from "./routes/ContactPage";
-import AthletesPage from "./routes/AthletesPage";
+import CoachesPage from "./routes/CoachesPage";
 import ProfilePage from "./routes/ProfilePage";
 import AccountPage from "./routes/AccountPage";
+import MentorsPage from "./routes/MentorsPage";
+import OfficialsPage from "./routes/OfficialsPage";
+import AthletesPage from "./routes/AthletesPage";
+import NewsAndUpdatesPage from "./routes/NewsAndUpdatesPage";
+import TrainingInstitutesAndClubsPage from "./routes/TrainingInstitutesAndClubsPage";
+
 import UserProfileTab from "./components/Account/UserProfileTab";
 import AddSkillsTab from "./components/Account/AddSkillsTab";
 import SupportsTab from "./components/Account/SupportsTab";
@@ -17,13 +24,11 @@ import CalenderTab from "./components/Account/CalenderTab";
 import PostsTab from "./components/Account/PostsTab";
 import PlayingCareerTab from "./components/Account/PlayingCareerTab";
 import EducationTab from "./components/Account/EducationTab";
-import NewsAndUpdatesPage from "./routes/NewsAndUpdatesPage";
+
 import AchieveCertificate from "./components/Account/AchieveCertificate";
 import Participation from "./components/Account/Participation";
 import BankAccount from "./components/Account/BankAccount";
 import Sponsorship from "./components/Account/Sponsorship";
-import TrainingInstitutesAndClubsPage from "./routes/TrainingInstitutesAndClubsPage";
-import VenuePage from "./routes/VenuePage";
 
 function App() {
   const router = createBrowserRouter([
@@ -46,6 +51,34 @@ function App() {
           children: [
             { index: true, element: <AthletesPage /> },
             { path: ":athleteId", element: <ProfilePage /> },
+          ],
+        },
+        {
+          path: "coaches",
+          children: [
+            { index: true, element: <CoachesPage /> },
+            { path: ":coachId", element: <ProfilePage /> },
+          ],
+        },
+        {
+          path: "mentors",
+          children: [
+            { index: true, element: <MentorsPage /> },
+            { path: ":mentorId", element: <ProfilePage /> },
+          ],
+        },
+        {
+          path: "institutes-and-clubs",
+          children: [
+            { index: true, element: <TrainingInstitutesAndClubsPage /> },
+            { path: ":clubsId", element: <ProfilePage /> },
+          ],
+        },
+        {
+          path: "officials",
+          children: [
+            { index: true, element: <OfficialsPage /> },
+            { path: ":officialId", element: <ProfilePage /> },
           ],
         },
         {
@@ -74,10 +107,6 @@ function App() {
         {
           path: "news-and-updates",
           element: <NewsAndUpdatesPage />,
-        },
-        {
-          path: "training-institutes-clubs",
-          element: <TrainingInstitutesAndClubsPage />,
         },
         {
           path: "venues",
