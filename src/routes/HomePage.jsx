@@ -14,7 +14,7 @@ const HomePage = () => {
   return (
     <>
       <Header
-        className={`h-screen hero bg-no-repeat bg-cover bg-fixed flex flex-col justify-between text-gray-50`}
+        className={`h-screen hero bg-no-repeat bg-cover bg-center bg-fixed flex flex-col justify-between text-gray-50`}
       >
         <Navbar />
         <HeroMain />
