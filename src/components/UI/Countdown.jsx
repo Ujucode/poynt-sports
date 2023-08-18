@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import { useState, useRef, useEffect, useCallback } from "react";
 
 const Countdown = () => {
@@ -56,10 +57,14 @@ const Countdown = () => {
   }, [startTimer]);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-2xl font-bold mb-4">Event Timer</h1>
+    <div className="flex flex-col items-center justify-center min-h-[50vh] bg-cover bg-no-repeat rounded event-overlay ">
+      <Typography className="text-2xl font-bold mb-4 text-white ">
+        Event Timer
+      </Typography>
 
-      <h2 className="text-3xl font-bold mb-4">{timer}</h2>
+      <Typography className="text-3xl font-bold mb-4 text-white">
+        {timer}
+      </Typography>
       <button
         className="px-4 py-2 bg-green-500 text-white rounded-md shadow-md hover:bg-green-600"
         onClick={onClickReset}

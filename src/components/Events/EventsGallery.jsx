@@ -12,7 +12,7 @@ const EventsGallery = () => {
         className="h-[15rem] bg-emerald-100 rounded-none flex items-center justify-center "
       >
         <Typography
-          className="text-center text-gray-600 font-bold"
+          className="text-center font-bold bg-gradient-to-r from-slate-600 to-slate-400 bg-clip-text text-transparent"
           variant="h3"
           gutterBottom
         >

@@ -19,7 +19,6 @@ const EventDetailTab = () => {
         <LocationOn />
         <span>Location: Guwahati</span>
       </div>
-
       <Countdown />
     </Box>
   );
