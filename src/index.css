@@ -18,15 +18,11 @@
   #root {
     /* display: flex;
     flex-direction: column; */
-    @apply flex;
-    @apply flex-col;
-    @apply min-h-screen;
+    @apply flex flex-col min-h-screen;
   }
   main {
     /* flex: 1 0 auto; */
-    @apply grow;
-    @apply shrink-0;
-    @apply basis-auto;
+    @apply grow shrink-0 basis-auto;
   }
   footer {
     /* flex-shrink: 0; */
@@ -48,6 +44,12 @@
     margin: 0 auto;
     width: 1200px;
   }
+  button {
+    @apply px-5 py-3 text-center text-white bg-green-700 rounded-md hover:bg-green-800 dark:focus:ring-green-900;
+  }
+}
+
+@layer utilities {
 }
 
 @layer components {

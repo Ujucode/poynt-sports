@@ -1,7 +1,7 @@
 import Main from "../components/Layout/Main";
-import ArticleContent from "../components/Layout/ArticleContent";
-import LeaveAReply from "../components/Layout/LeaveAReply";
-import ArticleMain from "../components/Layout/ArticleMain";
+import ArticleContent from "../components/NewsLetterAndUpdates/ArticleContent";
+import LeaveAReply from "../components/NewsLetterAndUpdates/LeaveAReply";
+import ArticleMain from "../components/NewsLetterAndUpdates/ArticleMain";
 import Hero from "../components/Layout/Hero";
 import trophy from "../assets/trophy.jpg";
 

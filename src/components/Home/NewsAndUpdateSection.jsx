@@ -2,7 +2,7 @@ import NewsCard from "../UI/Cards/NewsCard";
 
 const NewsAndUpdateSection = () => {
   return (
-    <section className="">
+    <section className="mb-24">
       <div className=" mb-10">
         <div className=" text-[40px] text-center pb-8 font-bold ">
           Updates and News Letters
