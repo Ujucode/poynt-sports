@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../UI/Button";
 
 const HeroMain = () => {
@@ -8,10 +9,10 @@ const HeroMain = () => {
           Poynt <span className="text-green-400 ">Sports</span>
         </h1>
         <p className="text-5xl my-9">Mark Your Game!</p>
-        <Button className="text-3xl rounded-full p-2 mt-6 border-4 border-green-400  ">
-          <a href="/" alt="home-button">
+        <Button className="text-3xl rounded-full p-2 mt-6 border-4 border-green-400 bg-transparent hover:bg-transparent">
+          <Link to="" href="/" alt="home-button">
             I&#39;m ready!
-          </a>
+          </Link>
         </Button>
       </div>
     </section>

@@ -1,14 +1,14 @@
+import Main from "../components/Layout/Main";
 import Header from "../components/Layout/Header";
 import Navbar from "../components/Layout/Navbar";
 import HeroMain from "../components/Home/HeroMain";
 import HeroFooter from "../components/Home/HeroLinks";
 import AthleteSection from "../components/Home/AthleteSection";
 import CoachesSection from "../components/Home/CoachesSection";
-import Mentors from "../components/Home/Mentors";
-import Training from "../components/Home/Training";
-import SportsOfficial from "../components/Home/SportsOfficial";
+import MentorsSection from "../components/Home/MentorsSection";
+import SportsOfficialSection from "../components/Home/SportsOfficialSection";
 import NewsAndUpdateSection from "../components/Home/NewsAndUpdateSection";
-import Main from "../components/Layout/Main";
+import TrainingInstitutesAndClubsSection from "../components/Home/TrainingInstitutesAndClubsSection";
 
 const HomePage = () => {
   return (
@@ -20,12 +20,12 @@ const HomePage = () => {
         <HeroMain />
         <HeroFooter />
       </Header>
-      <Main className="">
+      <Main className="flex flex-col">
         <AthleteSection />
         <CoachesSection />
-        <Mentors />
-        <Training />
-        <SportsOfficial />
+        <MentorsSection />
+        <TrainingInstitutesAndClubsSection />
+        <SportsOfficialSection />
         <NewsAndUpdateSection />
       </Main>
     </>

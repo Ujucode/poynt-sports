@@ -1,5 +1,5 @@
 import Main from "../components/Layout/Main";
-import AthletesGallery from "../components/Athletes/AthletesGallery";
+import AthletesGallery from "../components/Galleries/AthletesGallery";
 
 const AthletesPage = () => {
   return (

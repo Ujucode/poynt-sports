@@ -1,6 +1,6 @@
 const ArticleContent = () => {
   return (
-    <div>
+    <section>
       <p className="pb-4">
         Hashtags: #BordoloiTrophy #NorthEastIndia #FootballLegacy #CopaAmerica
         #SportsCulture #NortheastPride
@@ -77,7 +77,7 @@ const ArticleContent = () => {
         Hashtags: #BordoloiTrophy #NorthEastIndia #FootballLegacy #CopaAmerica
         #SportsCulture #NortheastPride
       </p>
-    </div>
+    </section>
   );
 };
 

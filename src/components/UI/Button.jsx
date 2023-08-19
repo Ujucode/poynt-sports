@@ -1,9 +1,5 @@
 const Button = (props) => {
-  return (
-    <div className="">
-      <button {...props}>{props.children}</button>
-    </div>
-  );
+  return <button className={` ${props.className}`}>{props.children}</button>;
 };
 
 export default Button;

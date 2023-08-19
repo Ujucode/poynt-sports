@@ -1,13 +1,13 @@
-import { MobileDatePicker } from "@mui/x-date-pickers";
 import { Paper, Typography, Box } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import BookmarkAddedIcon from "@mui/icons-material/BookmarkAdded";
 import { useState } from "react";
+import Button from "../Button";
 
-const EventsCard = ({ title, description, image, venue }) => {
+const EventsCard = ({ title, image, venue }) => {
   const [clicked, setClicked] = useState(true);
-  const handleClick = (e) => {
+  const handleClick = () => {
     setClicked(!clicked);
   };
   return (
@@ -23,7 +23,7 @@ const EventsCard = ({ title, description, image, venue }) => {
       <Box className="h-2/6 px-4 pt-4 flex gap-5 ">
         <Typography
           variant="h5"
-          className="w-1/6 text-center text-emerald-600 font-bold p-2  "
+          className="w-1/6 text-center text-green-600 font-bold p-2 hover:text-emerald-400 "
           wrap="true"
         >
           Mar, 27
@@ -42,7 +42,9 @@ const EventsCard = ({ title, description, image, venue }) => {
           <Typography variant="body2" className=" text-gray-900/70   ">
             <LocationOnIcon /> {venue}
           </Typography>
-          <button className="mt-4 text-emerald-600">Learn More</button>
+          <Button className="mt-4 bg-transparent text-green-700 hover:bg-transparent hover:text-emerald-400  ">
+            Learn More
+          </Button>
           <Box
             className="px-2 inline  text-gray-900/70 w-min cursor-pointer "
             onClick={handleClick}
