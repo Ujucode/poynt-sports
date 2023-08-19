@@ -9,8 +9,9 @@ import CoachesPage from "./routes/CoachesPage";
 import ProfilePage from "./routes/ProfilePage";
 import AccountPage from "./routes/AccountPage";
 import MentorsPage from "./routes/MentorsPage";
-import OfficialsPage from "./routes/OfficialsPage";
 import AthletesPage from "./routes/AthletesPage";
+import OfficialsPage from "./routes/OfficialsPage";
+import EventsDetailPage from "./routes/EventsDetailPage";
 import NewsAndUpdatesPage from "./routes/NewsAndUpdatesPage";
 import TrainingInstitutesAndClubsPage from "./routes/TrainingInstitutesAndClubsPage";
 
@@ -40,7 +41,10 @@ function App() {
         { index: true, element: <HomePage /> },
         {
           path: "events",
-          element: <EventsPage />,
+          children: [
+            { index: true, element: <EventsPage /> },
+            { path: ":eventsId", element: <EventsDetailPage /> },
+          ],
         },
         {
           path: "contact",

@@ -3,9 +3,9 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import BookmarkAddedIcon from "@mui/icons-material/BookmarkAdded";
 import { useState } from "react";
-import Button from "../Button";
+import { Link } from "react-router-dom";
 
-const EventsCard = ({ title, image, venue }) => {
+const EventsCard = ({ title, image, venue, id }) => {
   const [clicked, setClicked] = useState(true);
   const handleClick = () => {
     setClicked(!clicked);
@@ -16,7 +16,7 @@ const EventsCard = ({ title, image, venue }) => {
         <img
           src={image}
           alt="event"
-          className="rounded-t-md block object-cover  mx-auto w-full h-full"
+          className="rounded-t-md block object-cover mx-auto w-full h-full"
         />
       </Box>
 
@@ -42,9 +42,12 @@ const EventsCard = ({ title, image, venue }) => {
           <Typography variant="body2" className=" text-gray-900/70   ">
             <LocationOnIcon /> {venue}
           </Typography>
-          <Button className="mt-4 bg-transparent text-green-700 hover:bg-transparent hover:text-emerald-400  ">
+          <Link
+            to={`/events/${id}`}
+            className="mt-4 bg-transparent text-green-700 hover:bg-transparent hover:text-emerald-400  "
+          >
             Learn More
-          </Button>
+          </Link>
           <Box
             className="px-2 inline  text-gray-900/70 w-min cursor-pointer "
             onClick={handleClick}

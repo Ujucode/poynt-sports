@@ -5,7 +5,7 @@ import SignUpWrapper from "../Forms/SignUpWrapper";
 const Navbar = () => {
   return (
     <nav
-      className={`flex justify-between items-center h-32 text-3xl text-gray-50 p-4 font-bold bg-transparent]`}
+      className={`flex justify-between items-center h-32 text-3xl text-gray-50 py-4 font-bold bg-transparent]`}
     >
       <div>
         <Link to="/">

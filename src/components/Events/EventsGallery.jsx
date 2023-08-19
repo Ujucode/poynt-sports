@@ -1,7 +1,6 @@
 import { Paper, Typography } from "@mui/material";
 import { cardData } from "../../data/event-data";
 import EventsCard from "../UI/Cards/EventsCard";
-
 import { Box } from "@mui/system";
 
 const EventsGallery = () => {
@@ -22,6 +21,7 @@ const EventsGallery = () => {
       <Box className=" py-20 grid grid-cols-3 gap-10 ">
         {cardData.map((item) => (
           <EventsCard
+            id={item.id}
             key={item.id}
             title={item.title}
             description={item.description}
